@@ -38,8 +38,9 @@ class LangTile extends StatelessWidget {
               ),
             ],
           ),
-          const Spacer(),
+
           if (isSelected) ...[
+            const Spacer(),
             Container(
               width: 20,
               height: 20,

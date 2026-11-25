@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:grocermate/core/helpers/shared_functions.dart';
@@ -42,15 +43,13 @@ class _SplashPageState extends State<SplashPage>
       ),
     );
 
-    _slideAnimation = Tween<Offset>(
-      begin: const Offset(0, 0.3),
-      end: Offset.zero,
-    ).animate(
-      CurvedAnimation(
-        parent: _controller,
-        curve: const Interval(0.2, 0.8, curve: Curves.easeOutCubic),
-      ),
-    );
+    _slideAnimation =
+        Tween<Offset>(begin: const Offset(0, 0.3), end: Offset.zero).animate(
+          CurvedAnimation(
+            parent: _controller,
+            curve: const Interval(0.2, 0.8, curve: Curves.easeOutCubic),
+          ),
+        );
 
     _controller.forward();
 
@@ -95,7 +94,7 @@ class _SplashPageState extends State<SplashPage>
                             color: colors.card,
                             boxShadow: [
                               BoxShadow(
-                                color: colors.primary.withOpacity(0.2),
+                                color: colors.primary.withValues(alpha: 0.2),
                                 blurRadius: 24,
                                 spreadRadius: 4,
                               ),

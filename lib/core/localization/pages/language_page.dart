@@ -13,36 +13,32 @@ class LanguagePage extends StatelessWidget {
     return CustomScaffold(
       title: context.tr.lblLanguage,
       showBackButton: true,
-      body: ListView(
-        children: [
-          AppCard(
-            child: Column(
-              children: [
-                LangTile(
-                  flag: '🇪🇬',
-                  title: 'العربية',
-                  subtitle: context.tr.lblDefault,
-                  isSelected:
-                      context.read<LocaleCubit>().state.languageCode == 'ar',
-                  onTap: () {
-                    context.read<LocaleCubit>().setLocale(const Locale('ar'));
-                  },
-                ),
-                Divider(height: 16, color: context.appColors.divider),
-                LangTile(
-                  flag: '🇺🇸',
-                  title: 'English',
-                  subtitle: 'English',
-                  isSelected:
-                      context.read<LocaleCubit>().state.languageCode == 'en',
-                  onTap: () {
-                    context.read<LocaleCubit>().setLocale(const Locale('en'));
-                  },
-                ),
-              ],
+      body: AppCard(
+        child: Column(
+          children: [
+            LangTile(
+              flag: '🇪🇬',
+              title: 'العربية',
+              subtitle: context.tr.lblDefault,
+              isSelected:
+                  context.read<LocaleCubit>().state.languageCode == 'ar',
+              onTap: () {
+                context.read<LocaleCubit>().setLocale(const Locale('ar'));
+              },
             ),
-          ),
-        ],
+            Divider(height: 16, color: context.appColors.divider),
+            LangTile(
+              flag: '🇺🇸',
+              title: 'English',
+              subtitle: 'English',
+              isSelected:
+                  context.read<LocaleCubit>().state.languageCode == 'en',
+              onTap: () {
+                context.read<LocaleCubit>().setLocale(const Locale('en'));
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

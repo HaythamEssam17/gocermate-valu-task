@@ -31,7 +31,7 @@ class SliverProductGrid extends StatelessWidget {
     return SliverMainAxisGroup(
       slivers: [
         SliverGrid(
-          gridDelegate: productGridDelegate,
+          gridDelegate: getProductGridDelegate(context),
           delegate: SliverChildBuilderDelegate(
             (_, i) =>
                 ProductCard(key: ValueKey(items[i].id), product: items[i]),

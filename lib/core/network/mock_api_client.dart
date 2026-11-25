@@ -29,7 +29,6 @@ class MockApiClient implements ApiClient {
   late List<Map<String, dynamic>> _dealItems;
   final Map<String, double> _dealPrices = {};
 
-  // Server-side mutable state.
   final Map<String, double> _priceOverrides = {};
   final Map<String, int> _stockOverrides = {};
   final Map<String, Map<String, dynamic>> _orders = {};

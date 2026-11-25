@@ -12,10 +12,8 @@ class Breakpoints {
   static const double tabletBreakpoint = 1024;
 }
 
-/// Device type enum
 enum DeviceType { mobile, tablet, desktop }
 
-/// Responsive builder widget that conditionally builds UI based on screen width
 class ResponsiveBuilder extends StatelessWidget {
   final Widget Function(BuildContext context) mobile;
   final Widget Function(BuildContext context)? tablet;
