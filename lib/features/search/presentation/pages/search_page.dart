@@ -2,17 +2,18 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:grocermate/core/helpers/shared_functions.dart';
 import 'package:grocermate/core/utils/enums/view_status.dart';
 import 'package:grocermate/core/utils/extensions/context_extensions.dart';
-import 'package:grocermate/core/widgets/buttons/app_button.dart';
+import 'package:grocermate/core/widgets/app_text_form_field_widget.dart';
 import 'package:grocermate/core/widgets/custom_scaffold.dart';
 import 'package:grocermate/core/widgets/skeletons/product_grid_skeleton.dart';
 import 'package:grocermate/core/widgets/states_widgets/app_state_widget.dart';
 import 'package:grocermate/core/widgets/text_widgets/app_text.dart';
-import 'package:grocermate/features/category/presentation/bloc/category_bloc.dart';
 import 'package:grocermate/features/products/presentation/widgets/product_grid.dart';
 import 'package:grocermate/features/search/presentation/bloc/search/search_bloc.dart';
 import 'package:grocermate/features/search/presentation/bloc/search/search_events.dart';
 import 'package:grocermate/features/search/presentation/bloc/search/search_states.dart';
+import 'package:grocermate/features/search/presentation/widgets/active_filters.dart';
 import 'package:grocermate/features/search/presentation/widgets/filter_sheet.dart';
+import 'package:grocermate/features/search/presentation/widgets/saerch_idle.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -55,43 +56,13 @@ class _SearchPageState extends State<SearchPage> {
 
   @override
   Widget build(BuildContext context) {
-    final bloc = context.read<SearchBloc>();
-
     return CustomScaffold(
-      customBottomBar: TextField(
-        controller: _controller,
-        textInputAction: TextInputAction.search,
-        onChanged: (v) => bloc.add(SearchQueryChanged(v)),
-        onSubmitted: _submit,
-        decoration: InputDecoration(
-          hintText: 'Search groceries...',
-          prefixIcon: const Icon(Icons.search_rounded),
-          suffixIcon: ValueListenableBuilder<TextEditingValue>(
-            valueListenable: _controller,
-            builder: (_, v, _) => v.text.isEmpty
-                ? const SizedBox.shrink()
-                : IconButton(
-                    icon: const Icon(Icons.close_rounded),
-                    onPressed: () {
-                      _controller.clear();
-                      bloc.add(const SearchQueryChanged('', immediate: true));
-                    },
-                  ),
-          ),
-          filled: true,
-          fillColor: Theme.of(context).colorScheme.surfaceContainerHighest,
-          contentPadding: const EdgeInsets.symmetric(vertical: 0),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(28),
-            borderSide: BorderSide.none,
-          ),
-        ),
-      ),
+      customTitle: _buildSearchWidget(),
       appBarActions: [
         BlocSelector<SearchBloc, SearchState, int>(
           selector: (s) => s.activeFilters,
           builder: (context, count) => Padding(
-            padding: const EdgeInsets.only(right: 8),
+            padding: const EdgeInsets.only(left: 8),
             child: IconButton(
               tooltip: 'Filters',
               onPressed: () => showFilterSheet(context),
@@ -107,12 +78,13 @@ class _SearchPageState extends State<SearchPage> {
 
       body: BlocBuilder<SearchBloc, SearchState>(
         builder: (context, s) {
-          if (s.isIdle) return _Idle(state: s, onPick: _submit);
+          if (s.isIdle) return SearchIdle(state: s, onPick: _submit);
+
           return CustomScrollView(
             controller: _scroll,
             slivers: [
               if (s.activeFilters > 0)
-                SliverToBoxAdapter(child: _ActiveFilters(state: s)),
+                SliverToBoxAdapter(child: ActiveFilters(state: s)),
               if (s.suggestions.isNotEmpty && s.query.isNotEmpty)
                 SliverToBoxAdapter(
                   child: SizedBox(
@@ -209,89 +181,32 @@ class _SearchPageState extends State<SearchPage> {
         ];
     }
   }
-}
 
-class _ActiveFilters extends StatelessWidget {
-  const _ActiveFilters({required this.state});
-  final SearchState state;
-
-  @override
-  Widget build(BuildContext context) {
-    final categories = context.read<CategoriesBloc>().state.categories;
-    final catName = categories
-        .where((c) => c.id == state.categoryId)
-        .firstOrNull
-        ?.name;
+  Widget _buildSearchWidget() {
     final bloc = context.read<SearchBloc>();
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-      child: Wrap(
-        spacing: 8,
-        children: [
-          if (state.categoryId != null)
-            InputChip(
-              label: AppText(catName ?? state.categoryId!),
-              onDeleted: () =>
-                  bloc.add(SearchFilterChanged(brand: state.brand)),
-            ),
-          if (state.brand != null)
-            InputChip(
-              label: AppText(state.brand!),
-              onDeleted: () =>
-                  bloc.add(SearchFilterChanged(categoryId: state.categoryId)),
-            ),
-        ],
-      ),
-    );
-  }
-}
 
-class _Idle extends StatelessWidget {
-  const _Idle({required this.state, required this.onPick});
-  final SearchState state;
-  final ValueChanged<String> onPick;
-
-  @override
-  Widget build(BuildContext context) {
-    if (state.recents.isEmpty) {
-      return const AppStateWidget(
-        icon: Icons.manage_search_rounded,
-        title: 'Find your groceries',
-        message:
-            'Search by product name or use filters for category and brand.',
-      );
-    }
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              const Expanded(
-                child: AppText(
-                  'Recent searches',
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800,
-                ),
+    return AppTextFormField(
+      controller: _controller,
+      textInputAction: TextInputAction.search,
+      onChanged: (v) {
+        bloc.add(SearchQueryChanged(v!));
+        return v;
+      },
+      onSubmitted: _submit,
+      hintKey: 'Search groceries...',
+      labelKey: '',
+      prefixIcon: const Icon(Icons.search_rounded),
+      suffixIcon: ValueListenableBuilder<TextEditingValue>(
+        valueListenable: _controller,
+        builder: (_, v, _) => v.text.isEmpty
+            ? const SizedBox.shrink()
+            : IconButton(
+                icon: const Icon(Icons.close_rounded),
+                onPressed: () {
+                  _controller.clear();
+                  bloc.add(const SearchQueryChanged('', immediate: true));
+                },
               ),
-              AppButton(
-                text: 'Clear',
-                onPressed: () => context.read<SearchBloc>().add(
-                  const SearchRecentsCleared(),
-                ),
-                isFullWidth: false,
-              ),
-            ],
-          ),
-          for (final r in state.recents)
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              leading: const Icon(Icons.history_rounded),
-              title: AppText(r),
-              trailing: const Icon(Icons.north_west_rounded, size: 18),
-              onTap: () => onPick(r),
-            ),
-        ],
       ),
     );
   }

@@ -58,9 +58,8 @@ class CartItemTile extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            if (selectionMode)
-              Padding(
-                padding: const EdgeInsets.only(right: 8, top: 28),
+            if (selectionMode) ...[
+              Center(
                 child: Icon(
                   selected ? LucideIcons.circleCheckBig : LucideIcons.circle,
                   color: selected
@@ -68,6 +67,8 @@ class CartItemTile extends StatelessWidget {
                       : context.appColors.border,
                 ),
               ),
+              getSpaceWidth(context, 8),
+            ],
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
               child: SizedBox(
@@ -107,10 +108,27 @@ class CartItemTile extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        child: AppText(
-                          item.lineTotal.formatMoney(),
-                          fontWeight: FontWeight.w800,
-                          fontSize: 16,
+                        child: AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 200),
+                          transitionBuilder: (child, animation) =>
+                              FadeTransition(
+                                opacity: animation,
+                                child: ScaleTransition(
+                                  scale: animation,
+                                  alignment: Alignment.centerLeft,
+                                  child: child,
+                                ),
+                              ),
+                          child: Row(
+                            children: [
+                              AppText(
+                                item.lineTotal.formatMoney(),
+                                key: ValueKey<double>(item.lineTotal),
+                                fontWeight: FontWeight.w800,
+                                fontSize: 16,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       if (!isSaved && !selectionMode) ...[

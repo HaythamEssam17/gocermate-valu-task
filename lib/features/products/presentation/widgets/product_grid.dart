@@ -1,10 +1,11 @@
-import 'package:material_ui/material_ui.dart';
 import 'package:grocermate/core/factories/loading_factory.dart';
+import 'package:grocermate/core/helpers/shared_functions.dart';
 import 'package:grocermate/core/utils/extensions/context_extensions.dart';
 import 'package:grocermate/core/widgets/skeletons/product_grid_skeleton.dart';
 import 'package:grocermate/core/widgets/states_widgets/inline_error.dart';
 import 'package:grocermate/core/widgets/text_widgets/app_text.dart';
 import 'package:grocermate/features/products/domain/entities/product_entity.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../../../../core/error/failure.dart';
 import '../../../products/presentation/widgets/product_card.dart';
@@ -77,6 +78,6 @@ class SliverProductGrid extends StatelessWidget {
         ),
       );
     }
-    return const SizedBox(height: 40);
+    return getSpaceHeight(context, 40);
   }
 }

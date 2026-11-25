@@ -22,14 +22,14 @@ class QtyStepper extends StatelessWidget {
     final size = compact ? 28.0 : 34.0;
 
     Widget btn(IconData icon, VoidCallback onTap) => InkResponse(
-      onTap: onTap,
-      radius: size / 1.5,
-      child: SizedBox(
-        width: size,
-        height: size,
-        child: Icon(icon, size: compact ? 18 : 20),
-      ),
-    );
+          onTap: onTap,
+          radius: size / 1.5,
+          child: SizedBox(
+            width: size,
+            height: size,
+            child: Icon(icon, size: compact ? 18 : 20),
+          ),
+        );
 
     return Container(
       decoration: BoxDecoration(
@@ -42,13 +42,20 @@ class QtyStepper extends StatelessWidget {
           btn(qty <= 1 ? LucideIcons.trash : LucideIcons.minusCircle, onMinus),
           SizedBox(
             width: compact ? 22 : 28,
-            child: AppText(
-              '$qty',
-              textAlign: TextAlign.center,
-              fontWeight: FontWeight.w800,
+            child: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 200),
+              transitionBuilder: (child, animation) => ScaleTransition(
+                scale: animation,
+                child: FadeTransition(opacity: animation, child: child),
+              ),
+              child: AppText(
+                '$qty',
+                key: ValueKey<int>(qty),
+                textAlign: TextAlign.center,
+                fontWeight: FontWeight.w800,
+              ),
             ),
           ),
-
           btn(LucideIcons.circlePlus, onPlus),
         ],
       ),

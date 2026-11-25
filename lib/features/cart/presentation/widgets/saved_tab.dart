@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:grocermate/core/helpers/shared_functions.dart';
 import 'package:grocermate/core/widgets/states_widgets/app_state_widget.dart';
 import 'package:grocermate/features/cart/presentation/bloc/cart_bloc.dart';
 import 'package:grocermate/features/cart/presentation/bloc/cart_events.dart';
@@ -23,9 +24,8 @@ class SavedTab extends StatelessWidget {
       );
     }
     return ListView.separated(
-      padding: const EdgeInsets.all(16),
       itemCount: state.saved.length,
-      separatorBuilder: (_, _) => const SizedBox(height: 10),
+      separatorBuilder: (_, _) => getSpaceHeight(context, 12),
       itemBuilder: (_, i) {
         final item = state.saved[i];
         return CartItemTile(

@@ -1,24 +1,28 @@
-import 'package:material_ui/material_ui.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:grocermate/core/config/flags_repository.dart';
 import 'package:grocermate/core/connectivity/connectivity_cubit.dart';
+import 'package:grocermate/core/factories/loading_factory.dart';
+import 'package:grocermate/core/helpers/shared_functions.dart';
 import 'package:grocermate/core/router/app_router.dart';
 import 'package:grocermate/core/utils/enums/check_out_status.dart';
 import 'package:grocermate/core/utils/extensions/context_extensions.dart';
 import 'package:grocermate/core/utils/extensions/num_extensions.dart';
 import 'package:grocermate/core/widgets/app_flush_bar.dart';
 import 'package:grocermate/core/widgets/app_network_image.dart';
+import 'package:grocermate/core/widgets/buttons/app_button.dart';
 import 'package:grocermate/core/widgets/custom_scaffold.dart';
+import 'package:grocermate/core/widgets/text_widgets/app_text.dart';
 import 'package:grocermate/features/cart/domain/entities/cart_item.dart';
 import 'package:grocermate/features/cart/domain/entities/cart_totals.dart';
+import 'package:grocermate/features/checkout/domain/entities/checkout_args.dart';
 import 'package:grocermate/features/checkout/presentation/bloc/checkout_bloc.dart';
 import 'package:grocermate/features/checkout/presentation/bloc/checkout_events.dart';
 import 'package:grocermate/features/checkout/presentation/bloc/checkout_states.dart';
 import 'package:grocermate/features/checkout/presentation/widgets/review_sheet.dart';
-import 'package:grocermate/features/offline_sync/domain/entities/outbox_entry.dart';
-import 'package:grocermate/features/order/presentation/pages/order_page.dart';
+import 'package:grocermate/features/order/domain/entities/order_args.dart';
 import 'package:grocermate/shared/widgets/cart_widgets/cart_summary.dart';
+import 'package:material_ui/material_ui.dart';
 
 class CheckoutPage extends StatefulWidget {
   const CheckoutPage({super.key, required this.args});
@@ -90,7 +94,6 @@ class _CheckoutPageState extends State<CheckoutPage> {
       deliveryFee: flags.deliveryFee,
       freeDeliveryThreshold: flags.freeDeliveryThreshold,
     );
-    final scheme = Theme.of(context).colorScheme;
 
     return BlocConsumer<CheckoutBloc, CheckoutState>(
       listenWhen: (p, c) => p.status != c.status,
@@ -111,7 +114,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                     _Notice(
                       icon: Icons.sync_problem_rounded,
                       text: resume.note!,
-                      color: scheme.tertiaryContainer,
+                      color: context.appColors.error,
                     ),
                   if (!online)
                     _Notice(
@@ -119,22 +122,20 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       text: resume == null
                           ? context.tr.orderWillQueued
                           : context.tr.reconnectToReviewOrder,
-                      color: scheme.secondaryContainer,
+                      color: context.appColors.warning,
                     ),
                   if (state.status == CheckoutStatus.failure)
                     _Notice(
                       icon: Icons.error_outline_rounded,
                       text: state.failure?.message ?? context.tr.orderFailed,
-                      color: scheme.errorContainer,
+                      color: context.appColors.error,
                     ),
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 8),
-                    child: Text(
+                    child: AppText(
                       'Order summary',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w800,
-                      ),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
                     ),
                   ),
                   for (final i in _items)
@@ -148,67 +149,64 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           child: AppNetworkImage(i.image),
                         ),
                       ),
-                      title: Text(
+                      title: AppText(
                         i.title,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      subtitle: Text('${i.qty} x ${i.unitPrice.formatMoney()}'),
-                      trailing: Text(
+                      subtitle: AppText(
+                        '${i.qty} x ${i.unitPrice.formatMoney()}',
+                      ),
+                      trailing: AppText(
                         i.lineTotal.formatMoney(),
-                        style: const TextStyle(fontWeight: FontWeight.w800),
+                        fontWeight: FontWeight.w800,
                       ),
                     ),
-                  const SizedBox(height: 12),
+                  getSpaceHeight(context, 12),
                   CartSummary(totals: totals, flags: flags),
-                  const SizedBox(height: 12),
-                  Text(
+                  getSpaceHeight(context, 12),
+                  AppText(
                     'Prices and availability are confirmed when you place the order.',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: scheme.onSurfaceVariant,
-                    ),
+                    fontSize: 12,
+                    color: context.textColors.lightText,
                   ),
                 ],
               ),
               if (submitting)
-                const Positioned.fill(
+                Positioned.fill(
                   child: ColoredBox(
                     color: Colors.black26,
-                    child: Center(child: CircularProgressIndicator()),
+                    child: Center(
+                      child: PlatformLoading.buildLoading(context: context),
+                    ),
                   ),
                 ),
             ],
           ),
-          bottomNavigationBar: Material(
-            elevation: 8,
-            color: scheme.surface,
-            child: SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: FilledButton.icon(
-                  onPressed:
-                      submitting ||
-                          _items.isEmpty ||
-                          (!online && resume != null)
-                      ? null
-                      : () => context.read<CheckoutBloc>().add(
-                          CheckoutPlaceRequested(
-                            _items,
-                            outboxEntryId: resume?.id,
-                          ),
-                        ),
-                  icon: Icon(
-                    online
-                        ? Icons.lock_outline_rounded
-                        : Icons.schedule_send_rounded,
+          bottomNavigationBar: SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: AppButton(
+                      text: online
+                          ? '${resume == null ? 'Place order' : 'Review & submit'}  -  ${totals.total.formatMoney()}'
+                          : 'Queue order  -  ${totals.total.formatMoney()}',
+                      onPressed:
+                          submitting ||
+                              _items.isEmpty ||
+                              (!online && resume != null)
+                          ? null
+                          : () => context.read<CheckoutBloc>().add(
+                              CheckoutPlaceRequested(
+                                _items,
+                                outboxEntryId: resume?.id,
+                              ),
+                            ),
+                    ),
                   ),
-                  label: Text(
-                    online
-                        ? '${resume == null ? 'Place order' : 'Review & submit'}  -  ${totals.total.formatMoney()}'
-                        : 'Queue order  -  ${totals.total.formatMoney()}',
-                  ),
-                ),
+                ],
               ),
             ),
           ),
@@ -216,12 +214,6 @@ class _CheckoutPageState extends State<CheckoutPage> {
       },
     );
   }
-}
-
-class CheckoutArgs {
-  const CheckoutArgs({this.items, this.resume});
-  final List<CartItem>? items;
-  final OutboxEntry? resume;
 }
 
 class _Notice extends StatelessWidget {
@@ -241,8 +233,8 @@ class _Notice extends StatelessWidget {
     child: Row(
       children: [
         Icon(icon),
-        const SizedBox(width: 10),
-        Expanded(child: Text(text)),
+        getSpaceWidth(context, 12),
+        Expanded(child: AppText(text)),
       ],
     ),
   );

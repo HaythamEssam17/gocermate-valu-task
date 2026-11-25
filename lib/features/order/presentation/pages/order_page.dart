@@ -1,23 +1,18 @@
-import 'package:material_ui/material_ui.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:grocermate/core/helpers/shared_functions.dart';
 import 'package:grocermate/core/router/shell_tab_controller.dart';
 import 'package:grocermate/core/utils/enums/view_status.dart';
+import 'package:grocermate/core/utils/extensions/context_extensions.dart';
 import 'package:grocermate/core/utils/extensions/num_extensions.dart';
+import 'package:grocermate/core/widgets/buttons/app_button.dart';
+import 'package:grocermate/core/widgets/custom_scaffold.dart';
 import 'package:grocermate/core/widgets/skeletons/loading_skeleton.dart';
 import 'package:grocermate/core/widgets/states_widgets/inline_error.dart';
+import 'package:grocermate/core/widgets/text_widgets/app_text.dart';
+import 'package:grocermate/features/order/domain/entities/order_args.dart';
 import 'package:grocermate/features/order/presentation/bloc/order_cubit.dart';
 import 'package:grocermate/features/order/presentation/bloc/order_states.dart';
-
-class OrderArgs {
-  const OrderArgs({
-    required this.orderId,
-    this.partialMissing = 0,
-    this.fromOutbox = false,
-  });
-  final String orderId;
-  final int partialMissing;
-  final bool fromOutbox;
-}
+import 'package:material_ui/material_ui.dart';
 
 class OrderPage extends StatelessWidget {
   const OrderPage({super.key, required this.args});
@@ -25,15 +20,8 @@ class OrderPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Order'),
-        leading: IconButton(
-          icon: const Icon(Icons.close),
-          onPressed: () => Navigator.of(context).popUntil((r) => r.isFirst),
-        ),
-      ),
+    return CustomScaffold(
+      title: 'Order',
       body: BlocBuilder<OrderCubit, OrderState>(
         builder: (context, s) {
           return ListView(
@@ -44,45 +32,45 @@ class OrderPage extends StatelessWidget {
                   width: 92,
                   height: 92,
                   decoration: BoxDecoration(
-                    color: scheme.primaryContainer,
+                    color: context.appColors.primaryBg,
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
                     Icons.check_rounded,
                     size: 52,
-                    color: scheme.onPrimaryContainer,
+                    color: context.appColors.primary,
                   ),
                 ),
               ),
-              const SizedBox(height: 16),
-              Text(
+              getSpaceHeight(context, 16),
+              AppText(
                 args.partialMissing > 0
                     ? 'Order placed (partially)'
                     : 'Order placed!',
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.headlineSmall
-                    ?.copyWith(fontWeight: FontWeight.w800),
+                fontWeight: FontWeight.w800,
               ),
-              const SizedBox(height: 4),
-              Text(
+
+              getSpaceHeight(context, 4),
+              AppText(
                 'Order number ${args.orderId}',
                 textAlign: TextAlign.center,
-                style: TextStyle(color: scheme.onSurfaceVariant),
+                color: context.textColors.lightText,
               ),
               if (args.partialMissing > 0)
                 Container(
                   margin: const EdgeInsets.only(top: 16),
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: scheme.tertiaryContainer,
+                    // color: scheme.tertiaryContainer,
                     borderRadius: BorderRadius.circular(14),
                   ),
-                  child: Text(
+                  child: AppText(
                     '${args.partialMissing} unavailable item(s) were not included. '
                     'They are back in your cart so you can order them later.',
                   ),
                 ),
-              const SizedBox(height: 20),
+              getSpaceHeight(context, 20),
               if (s.status == ViewStatus.loading ||
                   s.status == ViewStatus.initial)
                 const Padding(
@@ -98,15 +86,15 @@ class OrderPage extends StatelessWidget {
                 for (final line in s.order!.items)
                   ListTile(
                     contentPadding: EdgeInsets.zero,
-                    title: Text(
+                    title: AppText(
                       s.products[line.productId]?.title ?? line.productId,
                     ),
-                    subtitle: Text(
+                    subtitle: AppText(
                       '${line.qty} x ${(line.unitPrice).formatMoney()}',
                     ),
-                    trailing: Text(
+                    trailing: AppText(
                       (line.qty * line.unitPrice).formatMoney(),
-                      style: const TextStyle(fontWeight: FontWeight.w700),
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
                 const Divider(),
@@ -120,13 +108,13 @@ class OrderPage extends StatelessWidget {
                 ),
                 _row('Total', (s.order!.total).formatMoney(), bold: true),
               ],
-              const SizedBox(height: 24),
-              FilledButton(
+              getSpaceHeight(context, 24),
+              AppButton(
+                text: 'Continue shopping',
                 onPressed: () {
                   Navigator.of(context).popUntil((r) => r.isFirst);
                   context.read<ShellTabController>().go(0);
                 },
-                child: const Text('Continue shopping'),
               ),
             ],
           );
@@ -139,18 +127,11 @@ class OrderPage extends StatelessWidget {
     padding: const EdgeInsets.symmetric(vertical: 3),
     child: Row(
       children: [
-        Expanded(
-          child: Text(
-            l,
-            style: TextStyle(fontWeight: bold ? FontWeight.w800 : null),
-          ),
-        ),
-        Text(
+        Expanded(child: AppText(l, fontWeight: bold ? FontWeight.w800 : null)),
+        AppText(
           v,
-          style: TextStyle(
-            fontWeight: bold ? FontWeight.w800 : FontWeight.w600,
-            fontSize: bold ? 18 : null,
-          ),
+          fontWeight: bold ? FontWeight.w800 : FontWeight.w600,
+          fontSize: bold ? 18 : null,
         ),
       ],
     ),

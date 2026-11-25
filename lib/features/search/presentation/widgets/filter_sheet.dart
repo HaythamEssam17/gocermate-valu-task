@@ -1,24 +1,24 @@
-import 'package:material_ui/material_ui.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:grocermate/core/di/injection.dart';
 import 'package:grocermate/core/factories/loading_factory.dart';
 import 'package:grocermate/core/helpers/shared_functions.dart';
 import 'package:grocermate/core/utils/enums/view_status.dart';
+import 'package:grocermate/core/widgets/bottom_sheets/glass_bottom_sheet.dart';
 import 'package:grocermate/core/widgets/buttons/app_button.dart';
 import 'package:grocermate/core/widgets/text_widgets/app_text.dart';
 import 'package:grocermate/features/category/presentation/bloc/category_bloc.dart';
 import 'package:grocermate/features/search/presentation/bloc/brands/brands_cubit.dart';
 import 'package:grocermate/features/search/presentation/bloc/search/search_bloc.dart';
 import 'package:grocermate/features/search/presentation/bloc/search/search_events.dart';
+import 'package:material_ui/material_ui.dart';
 
 Future<void> showFilterSheet(BuildContext context) {
   final searchBloc = context.read<SearchBloc>();
   final categoriesBloc = context.read<CategoriesBloc>();
-  return showModalBottomSheet<void>(
+
+  return showGlassBottomModalSheet(
     context: context,
-    isScrollControlled: true,
-    showDragHandle: true,
-    builder: (_) => MultiBlocProvider(
+    child: MultiBlocProvider(
       providers: [
         BlocProvider.value(value: searchBloc),
         BlocProvider.value(value: categoriesBloc),

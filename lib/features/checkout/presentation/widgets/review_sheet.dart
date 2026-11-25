@@ -1,9 +1,15 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:grocermate/core/factories/loading_factory.dart';
+import 'package:grocermate/core/helpers/shared_functions.dart';
+import 'package:grocermate/core/utils/enums/app_button_type.dart';
 import 'package:grocermate/core/utils/enums/check_out_status.dart';
 import 'package:grocermate/core/utils/enums/review_issue_kind.dart';
 import 'package:grocermate/core/utils/enums/review_resolution.dart';
 import 'package:grocermate/core/utils/extensions/num_extensions.dart';
 import 'package:grocermate/core/widgets/app_network_image.dart';
+import 'package:grocermate/core/widgets/bottom_sheets/glass_bottom_sheet.dart';
+import 'package:grocermate/core/widgets/buttons/app_button.dart';
+import 'package:grocermate/core/widgets/text_widgets/app_text.dart';
 import 'package:grocermate/features/checkout/domain/entities/review_entites/review_issue.dart';
 import 'package:grocermate/features/checkout/presentation/bloc/checkout_bloc.dart';
 import 'package:grocermate/features/checkout/presentation/bloc/checkout_events.dart';
@@ -11,14 +17,9 @@ import 'package:grocermate/features/checkout/presentation/bloc/checkout_states.d
 import 'package:material_ui/material_ui.dart';
 
 Future<void> showReviewSheet(BuildContext context, CheckoutBloc bloc) {
-  return showModalBottomSheet<void>(
+  return showGlassBottomModalSheet(
     context: context,
-    isScrollControlled: true,
-    isDismissible: false,
-    enableDrag: false,
-    showDragHandle: true,
-    builder: (_) =>
-        BlocProvider.value(value: bloc, child: const _ReviewSheet()),
+    child: BlocProvider.value(value: bloc, child: const _ReviewSheet()),
   );
 }
 
@@ -45,14 +46,12 @@ class _ReviewSheet extends StatelessWidget {
                   child: Row(
                     children: [
                       Icon(Icons.info_outline_rounded, color: scheme.primary),
-                      const SizedBox(width: 8),
+                      getSpaceWidth(context, 8),
                       const Expanded(
-                        child: Text(
+                        child: AppText(
                           'Your order needs a quick review',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w800,
-                          ),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w800,
                         ),
                       ),
                     ],
@@ -60,7 +59,7 @@ class _ReviewSheet extends StatelessWidget {
                 ),
                 const Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 20, 8),
-                  child: Text(
+                  child: AppText(
                     'Some items changed since you added them. Choose what to do for each one.',
                   ),
                 ),
@@ -72,7 +71,7 @@ class _ReviewSheet extends StatelessWidget {
                       vertical: 8,
                     ),
                     itemCount: s.issues.length,
-                    separatorBuilder: (_, _) => const SizedBox(height: 10),
+                    separatorBuilder: (_, _) => getSpaceHeight(context, 12),
                     itemBuilder: (_, i) =>
                         _IssueCard(issue: s.issues[i], enabled: !submitting),
                   ),
@@ -82,7 +81,9 @@ class _ReviewSheet extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        child: OutlinedButton(
+                        child: AppButton(
+                          text: 'Cancel',
+                          type: AppButtonType.outline,
                           onPressed: submitting
                               ? null
                               : () {
@@ -90,10 +91,9 @@ class _ReviewSheet extends StatelessWidget {
                                     const CheckoutReviewDismissed(),
                                   );
                                 },
-                          child: const Text('Cancel'),
                         ),
                       ),
-                      const SizedBox(width: 12),
+                      getSpaceWidth(context, 12),
                       Expanded(
                         flex: 2,
                         child: FilledButton(
@@ -103,14 +103,16 @@ class _ReviewSheet extends StatelessWidget {
                                   const CheckoutResubmitted(),
                                 ),
                           child: submitting
-                              ? const SizedBox(
+                              ? SizedBox(
                                   width: 20,
                                   height: 20,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2.5,
+                                  child: Center(
+                                    child: PlatformLoading.buildLoading(
+                                      context: context,
+                                    ),
                                   ),
                                 )
-                              : const Text('Confirm & place order'),
+                              : const AppText('Confirm & place order'),
                         ),
                       ),
                     ],

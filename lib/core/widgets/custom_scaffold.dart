@@ -17,6 +17,7 @@ class CustomScaffold extends StatelessWidget {
   final Widget? bottomNavigationBar;
   final bool isLoading;
   final Widget? customBottomBar;
+  final Widget? customTitle;
 
   /// Layout configuration
   final bool useSafeArea;
@@ -42,6 +43,7 @@ class CustomScaffold extends StatelessWidget {
     this.maxResponsiveWidth = 1200,
     this.padding,
     this.customBottomBar,
+    this.customTitle,
   });
 
   @override
@@ -77,7 +79,11 @@ class CustomScaffold extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: context.appColors.background,
-      appBar: (title != null || appBarActions != null || showBackButton)
+      appBar:
+          title != null ||
+              appBarActions != null ||
+              showBackButton ||
+              customBottomBar != null
           ? CustomAppBar(
               title: title,
               subtitle: subtitle,
@@ -87,6 +93,7 @@ class CustomScaffold extends StatelessWidget {
               searchHint: searchHint,
               onSearchTap: onSearchTap,
               customBottomBar: customBottomBar,
+              customTitle: customTitle,
             )
           : null,
       body: content,

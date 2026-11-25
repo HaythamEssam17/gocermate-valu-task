@@ -20,5 +20,5 @@ void registerOrderModule(GetIt sl) {
   sl.registerLazySingleton(() => GetOrderUseCase(sl()));
 
   // Bloc
-  sl.registerLazySingleton(() => OrderCubit(sl(), sl()));
+  sl.registerFactory(() => OrderCubit(sl(), sl()));
 }

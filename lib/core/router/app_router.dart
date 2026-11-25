@@ -3,25 +3,34 @@ import 'package:go_router/go_router.dart';
 import 'package:grocermate/app/app_shell.dart';
 import 'package:grocermate/app/maintenance_page.dart';
 import 'package:grocermate/core/di/injection.dart';
+import 'package:grocermate/features/checkout/domain/entities/checkout_args.dart';
 import 'package:grocermate/features/checkout/presentation/bloc/checkout_bloc.dart';
 import 'package:grocermate/features/checkout/presentation/pages/checkout_page.dart';
+import 'package:grocermate/features/order/domain/entities/order_args.dart';
 import 'package:grocermate/features/order/presentation/bloc/order_cubit.dart';
 import 'package:grocermate/features/order/presentation/pages/order_page.dart';
 import 'package:grocermate/features/product_details/presentation/bloc/product_details_bloc.dart';
 import 'package:grocermate/features/product_details/presentation/bloc/product_details_events.dart';
 import 'package:grocermate/features/product_details/presentation/pages/product_details_page.dart';
+import 'package:grocermate/features/splash/presentation/pages/splash_page.dart';
 
 class AppRoutes {
   AppRoutes._();
 
+  static const splash = '/splash';
   static const shell = '/';
   static const product = '/product';
   static const checkout = '/checkout';
   static const order = '/order';
 
   static final GoRouter router = GoRouter(
-    initialLocation: shell,
+    initialLocation: splash,
     routes: [
+      GoRoute(
+        path: splash,
+        name: splash,
+        builder: (context, state) => const SplashPage(),
+      ),
       GoRoute(
         path: shell,
         name: shell,
@@ -57,7 +66,7 @@ class AppRoutes {
         path: checkout,
         name: checkout,
         builder: (context, state) {
-          final args = state.extra as CheckoutArgs;
+          final args = (state.extra as CheckoutArgs?) ?? const CheckoutArgs();
           return BlocProvider(
             create: (_) => sl<CheckoutBloc>(),
             child: CheckoutPage(args: args),
@@ -68,7 +77,8 @@ class AppRoutes {
         path: order,
         name: order,
         builder: (context, state) {
-          final args = state.extra as OrderArgs;
+          final args =
+              (state.extra as OrderArgs?) ?? const OrderArgs(orderId: '');
           return BlocProvider(
             create: (_) => sl<OrderCubit>()..load(args.orderId),
             child: OrderPage(args: args),

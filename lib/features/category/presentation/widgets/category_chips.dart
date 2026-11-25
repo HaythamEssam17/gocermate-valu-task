@@ -10,6 +10,7 @@ import 'package:grocermate/features/category/presentation/bloc/category_states.d
 import 'package:grocermate/features/products/presentation/bloc/products_bloc.dart';
 import 'package:grocermate/features/products/presentation/bloc/products_events.dart';
 import 'package:grocermate/features/products/presentation/bloc/products_states.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:material_ui/material_ui.dart';
 
 class CategoryChips extends StatelessWidget {
@@ -27,7 +28,7 @@ class CategoryChips extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: ActionChip(
-                  avatar: const Icon(Icons.refresh, size: 18),
+                  avatar: const Icon(LucideIcons.refreshCcw, size: 18),
                   label: AppText(context.tr.failedToLoadCategories),
                   onPressed: () => context.read<CategoriesBloc>().add(
                     const CategoriesRequested(),

@@ -69,10 +69,13 @@ class _HomePageState extends State<HomePage> {
           physics: const AlwaysScrollableScrollPhysics(),
           slivers: [
             const SliverToBoxAdapter(child: StaleNotice()),
+            const SliverPadding(padding: EdgeInsets.only(bottom: 16)),
 
             const SliverToBoxAdapter(child: DealsSection()),
+            const SliverPadding(padding: EdgeInsets.only(bottom: 16)),
 
             const SliverToBoxAdapter(child: CategoryChips()),
+            const SliverPadding(padding: EdgeInsets.only(bottom: 16)),
 
             BlocBuilder<ProductsBloc, ProductsState>(
               buildWhen: (p, c) =>

@@ -37,7 +37,6 @@ class CartTab extends StatelessWidget {
       children: [
         Expanded(
           child: ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
             children: [
               for (final item in state.cart)
                 Padding(

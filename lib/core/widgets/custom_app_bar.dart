@@ -6,8 +6,8 @@ import 'package:grocermate/core/utils/extensions/context_extensions.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:material_ui/material_ui.dart';
 
-import 'text_widgets/app_text.dart';
 import 'buttons/app_icon_button.dart';
+import 'text_widgets/app_text.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String? title;
@@ -18,6 +18,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String? searchHint;
   final VoidCallback? onSearchTap;
   final Widget? customBottomBar;
+  final Widget? customTitle;
 
   const CustomAppBar({
     super.key,
@@ -29,6 +30,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.searchHint,
     this.onSearchTap,
     this.customBottomBar,
+    this.customTitle,
   });
 
   @override
@@ -66,18 +68,20 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             )
           : null,
-      title: title != null
-          ? Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                AppText(title!, fontSize: 18, fontWeight: FontWeight.w800),
-                if (subtitle != null) ...[
-                  getSpaceHeight(context, 4),
-                  AppText(subtitle!, fontSize: 12, color: text.lightText),
-                ],
-              ],
-            )
-          : null,
+      title:
+          customTitle ??
+          (title != null
+              ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    AppText(title!, fontSize: 18, fontWeight: FontWeight.w800),
+                    if (subtitle != null) ...[
+                      getSpaceHeight(context, 4),
+                      AppText(subtitle!, fontSize: 12, color: text.lightText),
+                    ],
+                  ],
+                )
+              : null),
       actions: actions,
       bottom: showSearchBar
           ? const PreferredSize(

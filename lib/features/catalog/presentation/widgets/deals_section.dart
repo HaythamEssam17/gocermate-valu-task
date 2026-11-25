@@ -1,4 +1,3 @@
-import 'package:material_ui/material_ui.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:grocermate/core/config/flags_repository.dart';
 import 'package:grocermate/core/helpers/shared_functions.dart';
@@ -8,6 +7,7 @@ import 'package:grocermate/core/widgets/text_widgets/app_text.dart';
 import 'package:grocermate/features/catalog/presentation/bloc/deals_cubit.dart';
 import 'package:grocermate/features/catalog/presentation/bloc/deals_states.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'deal_card.dart';
 
@@ -34,21 +34,20 @@ class DealsSection extends StatelessWidget {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-                  child: Row(
-                    spacing: 8,
-                    children: [
-                      Icon(LucideIcons.flame, color: context.appColors.primary),
+                Row(
+                  spacing: 8,
+                  children: [
+                    Icon(LucideIcons.flame, color: context.appColors.primary),
 
-                      AppText(
-                        context.tr.dealsOfTheDay,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ],
-                  ),
+                    AppText(
+                      context.tr.dealsOfTheDay,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ],
                 ),
+                getSpaceHeight(context, 16),
+
                 SizedBox(
                   height: 196,
                   child: ListView.separated(

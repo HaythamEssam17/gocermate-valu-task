@@ -10,10 +10,10 @@ import 'package:grocermate/core/utils/extensions/num_extensions.dart';
 import 'package:grocermate/core/widgets/app_card.dart';
 import 'package:grocermate/core/widgets/buttons/app_button.dart';
 import 'package:grocermate/core/widgets/text_widgets/app_text.dart';
-import 'package:grocermate/features/checkout/presentation/pages/checkout_page.dart';
+import 'package:grocermate/features/checkout/domain/entities/checkout_args.dart';
 import 'package:grocermate/features/offline_sync/domain/entities/outbox_entry.dart';
 import 'package:grocermate/features/offline_sync/presentation/bloc/outbox_cubit.dart';
-import 'package:grocermate/features/order/presentation/pages/order_page.dart';
+import 'package:grocermate/features/order/domain/entities/order_args.dart';
 import 'package:material_ui/material_ui.dart';
 
 class EntryCard extends StatelessWidget {
@@ -101,7 +101,7 @@ class EntryCard extends StatelessWidget {
           Wrap(
             spacing: 8,
             children: [
-              if (entry.status == OutboxStatus.needsReview)
+              if (entry.status == OutboxStatus.needsReview) ...[
                 AppButton(
                   text: 'Review',
                   isFullWidth: false,
@@ -111,15 +111,19 @@ class EntryCard extends StatelessWidget {
                   ),
                   type: AppButtonType.ghost,
                 ),
-              if (entry.status == OutboxStatus.failed)
+                getSpaceHeight(context, 8),
+              ],
+              if (entry.status == OutboxStatus.failed) ...[
                 AppButton(
                   text: 'Retry',
                   isFullWidth: false,
                   onPressed: () => cubit.retry(entry),
                   type: AppButtonType.ghost,
                 ),
+                getSpaceHeight(context, 8),
+              ],
               if (entry.status == OutboxStatus.completed &&
-                  entry.orderId != null)
+                  entry.orderId != null) ...[
                 AppButton(
                   text: 'View order',
                   isFullWidth: false,
@@ -129,6 +133,8 @@ class EntryCard extends StatelessWidget {
                   ),
                   type: AppButtonType.secondary,
                 ),
+                getSpaceHeight(context, 8),
+              ],
               if (entry.status == OutboxStatus.completed)
                 AppButton(
                   text: 'Dismiss',
@@ -141,7 +147,7 @@ class EntryCard extends StatelessWidget {
                   text: 'Cancel & restore cart',
                   isFullWidth: false,
                   onPressed: () => cubit.cancel(entry),
-                  type: AppButtonType.secondary,
+                  // type: AppButtonType.secondary,
                 ),
             ],
           ),

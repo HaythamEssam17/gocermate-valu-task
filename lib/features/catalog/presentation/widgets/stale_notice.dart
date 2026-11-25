@@ -17,6 +17,7 @@ class StaleNotice extends StatelessWidget {
       buildWhen: (p, c) => p.fromCache != c.fromCache,
       builder: (context, state) {
         if (!online || !state.fromCache) return const SizedBox.shrink();
+
         return Padding(
           padding: const EdgeInsets.fromLTRB(16, 4, 16, 0),
           child: InlineError(
