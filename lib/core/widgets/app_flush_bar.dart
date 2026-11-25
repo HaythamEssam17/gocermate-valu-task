@@ -65,7 +65,7 @@ class AppFlushbar {
 
     _activeFlushbar = flushbar;
 
-    if (!context.mounted) {
+    if (context.mounted) {
       await flushbar.show(context);
     }
   }
