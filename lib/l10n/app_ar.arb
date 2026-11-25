@@ -1,0 +1,105 @@
+{
+    "lblAppName": "Grocer Mate",
+    "lblLang": "English",
+    "lblLanguage": "اللغة",
+    "lblDefault": "الافتراضية",
+    "lblTheme": "المظهر",
+    "lblRetry": "حاول مرة اخري",
+    "lblWrongHappen": "حدث خطأ ما، الرجاء المحاولة في وقت لاحق",
+    "lblLoading": "تحميل...",
+    "lblDarkMode": "الوضع الداكن",
+    "lblLightMode": "الوضع المضيء",
+    "lblSearch": "بحث",
+    "lblEGP": "ج.م",
+    "lblHome": "الرئيسية",
+    "lblCart": "السلة",
+    "lblServices": "الخدمات",
+    "lblOrders": "الطلبات",
+    "lblNotifications": "الإشعارات",
+    "youAreOffline": "أنت غير متصل - تظهر البيانات المحفوظة. السلة والطلبات لا تزال تعمل حتي عودة الإتصال.",
+    "backOnline": "تمت الاتصال بالإنترنت - جاري مزامنة بياناتك",
+    "willBack": "سيتم العودة لاحقا",
+    "appUnderMaintenance": "GrocerMate قيد الصيانة. يرجى المحاولة مجدداً بعد بضع دقائق.",
+    "checkAgain": "تحقق مجددًا",
+    "orderQueued": "تم اضافة الطلب في قائمة الانتظار. سيتم إرساله عند عودتك للاتصال بالإنترنت.",
+    "noItemsLeftToOrder": "لا يوجد عناصر للطلب.",
+    "checkout": "الدفع",
+    "reviewQueuedOrder": "مراجعة الطلب في قائمة الانتظار",
+    "orderWillQueued": "أنت غير متصل. سيتم وضع طلبك في قائمة الانتظار وإرساله تلقائيًا عند إعادة الاتصال.",
+    "reconnectToReviewOrder": "أعد الاتصال لمراجعة هذا الطلب.",
+    "orderFailed": "فشل الطلب.",
+    "mockServerTools": "محاكاة أدوات الخادم",
+    "simulateOffline": "المحاكاة دون اتصال بالإنترنت",
+    "behavesExactlyLikeLosingConnection": "",
+    "randomRequestFailures": "Random request failures",
+    "latency": "Latency",
+    "fast": "Fast",
+    "normal": "Normal",
+    "slow": "Slow",
+    "noDealsForNow": "لا توجد عروض في الوقت الحالي.",
+    "dealsOfTheDay": "عروض اليوم",
+    "outOfStock": "غير متوفر في المخزن.",
+    "items": "العناصر",
+    "discount": "الخصم",
+    "subtotal": "المجموع",
+    "tax": "الضريبة",
+    "delivery": "التوصيل",
+    "free": "مجاني",
+    "total": "الإجمالي",
+    "addMoreForFreeDelivery": "أضف {count} منتجًا إضافيًا للحصول على التوصيل المجاني.",
+    "@addMoreForFreeDelivery": {
+        "placeholders": {
+            "count": {
+                "type": "double"
+            }
+        }
+    },
+    "onlyStockLeft": "متبقي {stock} فقط",
+    "@onlyStockLeft": {
+        "placeholders": {
+            "stock": {
+                "type": "int"
+            }
+        }
+    },
+    "qty": "الكمية",
+    "moveToCart": "إضافة إلى السلة",
+    "saveForLater": "حفظ لوقت لاحق",
+    "cartCount": "السلة {count}",
+    "@cartCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "selectedCount": "تم اختيار {count}",
+    "@selectedCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "savedCount": "تم حفظ {count}",
+    "@savedCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "myCart": "السلة",
+    "yourCartIsEmpty": "السلة فارغة",
+    "addSomeToGetStarted": "أضف بعض المواد الغذائية الطازجة لتبدأ.",
+    "browseProducts": "تصفح المنتجات",
+    "nothingSavedForLater": "لا يوجد ما تم حفظه للاطلاع عليه لاحقًا",
+    "moveItemsToSavedLater": "انقل المنتجات من سلة التسوق إلى هنا لشرائها في وقت لاحق.",
+    "failedToLoadProducts": "فشل في تحميل المنتجات",
+    "noProducts": "لا توجد منتجات هنا حتى الآن",
+    "tryAnotherCategory": "جرب فئة أخرى.",
+    "couldNotRefresh": "تعذر التحديث - يتم عرض المنتجات المحفوظة.",
+    "youReachedTheEnd": "لقد وصلت إلى النهاية",
+    "failedToLoadCategories": "فشل تحميل التصنيفات - إعادة المحاولة",
+    "all": "الكل"
+}

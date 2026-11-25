@@ -1,0 +1,9 @@
+{
+  "c_fruit": ["FreshFarm", "SunnyOrchard", "GreenLeaf"],
+  "c_dairy": ["DairyPure", "MilkWay", "FarmGold"],
+  "c_bakery": ["BakeHouse", "Crust&Co", "MorningOven"],
+  "c_beverages": ["FreshSip", "Aqua Pura", "CitrusCo"],
+  "c_pantry": ["GoldenGrain", "PantryPro", "NutriMill"],
+  "c_household": ["SparkleHome", "CleanWave", "EcoNest"],
+  "c_personal": ["PureGlow", "SoftTouch", "DailyCare"]
+}

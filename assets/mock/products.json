@@ -1,0 +1,2445 @@
+[
+  {
+    "id": "p_apple_gala",
+    "title": "Apple Gala (1kg)",
+    "brand": "FreshFarm",
+    "price": 2.49,
+    "originalPrice": 2.99,
+    "stock": 37,
+    "image": "https://picsum.photos/seed/apple/600/400",
+    "images": [
+      "https://picsum.photos/seed/apple/600/400"
+    ],
+    "badges": [
+      "deal",
+      "fresh"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.5,
+    "description": "Crisp and sweet Gala apples.",
+    "nutrition": {
+      "calories": 52,
+      "fiber": 2.4,
+      "vitaminC": 7
+    },
+    "allergens": [],
+    "related": [
+      "p_banana_chiquita",
+      "p_orange_navel"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_banana_chiquita",
+    "title": "Banana (1kg)",
+    "brand": "SunnyOrchard",
+    "price": 1.79,
+    "originalPrice": 1.79,
+    "stock": 82,
+    "image": "https://picsum.photos/seed/banana/600/400",
+    "images": [
+      "https://picsum.photos/seed/banana/600/400",
+      "https://picsum.photos/seed/banana-b/600/400",
+      "https://picsum.photos/seed/banana-c/600/400"
+    ],
+    "badges": [
+      "fresh"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.6,
+    "description": "Banana (1kg) by SunnyOrchard. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 58,
+      "fiber": 2.8,
+      "vitaminC": 22
+    },
+    "allergens": [],
+    "related": [
+      "p_orange_navel",
+      "p_grapes_red",
+      "p_strawberry_box"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_orange_navel",
+    "title": "Orange Navel (1kg)",
+    "brand": "GreenLeaf",
+    "price": 2.19,
+    "originalPrice": 2.49,
+    "stock": 0,
+    "image": "https://picsum.photos/seed/orange/600/400",
+    "images": [
+      "https://picsum.photos/seed/orange/600/400",
+      "https://picsum.photos/seed/orange-b/600/400",
+      "https://picsum.photos/seed/orange-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "vitaminC",
+      "oos"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.2,
+    "description": "Orange Navel (1kg) by GreenLeaf. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 50,
+      "fiber": 2.0,
+      "vitaminC": 14
+    },
+    "allergens": [],
+    "related": [
+      "p_grapes_red",
+      "p_strawberry_box",
+      "p_blueberry_box"
+    ],
+    "backorderable": true
+  },
+  {
+    "id": "p_grapes_red",
+    "title": "Red Grapes (500g)",
+    "brand": "FreshFarm",
+    "price": 2.59,
+    "originalPrice": 2.99,
+    "stock": 19,
+    "image": "https://picsum.photos/seed/grapes/600/400",
+    "images": [
+      "https://picsum.photos/seed/grapes/600/400",
+      "https://picsum.photos/seed/grapes-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.1,
+    "description": "Red Grapes (500g) by FreshFarm. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 82,
+      "fiber": 3.2,
+      "vitaminC": 26
+    },
+    "allergens": [],
+    "related": [
+      "p_strawberry_box",
+      "p_blueberry_box",
+      "p_mango_kent"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_strawberry_box",
+    "title": "Strawberries (250g)",
+    "brand": "SunnyOrchard",
+    "price": 2.99,
+    "originalPrice": 3.49,
+    "stock": 9,
+    "image": "https://picsum.photos/seed/strawberry/600/400",
+    "images": [
+      "https://picsum.photos/seed/strawberry/600/400",
+      "https://picsum.photos/seed/strawberry-b/600/400"
+    ],
+    "badges": [
+      "deal",
+      "fresh",
+      "limited"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.7,
+    "description": "Strawberries (250g) by SunnyOrchard. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 44,
+      "fiber": 1.4,
+      "vitaminC": 8
+    },
+    "allergens": [],
+    "related": [
+      "p_blueberry_box",
+      "p_mango_kent",
+      "p_pineapple"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_blueberry_box",
+    "title": "Blueberries (125g)",
+    "brand": "GreenLeaf",
+    "price": 3.49,
+    "originalPrice": 3.99,
+    "stock": 14,
+    "image": "https://picsum.photos/seed/blueberry_box/600/400",
+    "images": [
+      "https://picsum.photos/seed/blueberry_box/600/400",
+      "https://picsum.photos/seed/blueberry_box-b/600/400",
+      "https://picsum.photos/seed/blueberry_box-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "fresh"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.4,
+    "description": "Blueberries (125g) by GreenLeaf. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 96,
+      "fiber": 2.6,
+      "vitaminC": 40
+    },
+    "allergens": [],
+    "related": [
+      "p_mango_kent",
+      "p_pineapple",
+      "p_lemon"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_mango_kent",
+    "title": "Mango Kent (each)",
+    "brand": "SunnyOrchard",
+    "price": 1.99,
+    "originalPrice": 1.99,
+    "stock": 40,
+    "image": "https://picsum.photos/seed/mango_kent/600/400",
+    "images": [
+      "https://picsum.photos/seed/mango_kent/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_fruit",
+    "rating": 4.0,
+    "description": "Mango Kent (each) by SunnyOrchard. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 90,
+      "fiber": 2.0,
+      "vitaminC": 34
+    },
+    "allergens": [],
+    "related": [
+      "p_pineapple",
+      "p_lemon",
+      "p_watermelon"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_pineapple",
+    "title": "Pineapple (each)",
+    "brand": "GreenLeaf",
+    "price": 2.89,
+    "originalPrice": 3.29,
+    "stock": 11,
+    "image": "https://picsum.photos/seed/pineapple/600/400",
+    "images": [
+      "https://picsum.photos/seed/pineapple/600/400",
+      "https://picsum.photos/seed/pineapple-b/600/400",
+      "https://picsum.photos/seed/pineapple-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "vitaminC"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.3,
+    "description": "Pineapple (each) by GreenLeaf. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 53,
+      "fiber": 2.3,
+      "vitaminC": 17
+    },
+    "allergens": [],
+    "related": [
+      "p_lemon",
+      "p_watermelon",
+      "p_kiwi"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_lemon",
+    "title": "Lemons (500g)",
+    "brand": "FreshFarm",
+    "price": 1.59,
+    "originalPrice": 1.59,
+    "stock": 55,
+    "image": "https://picsum.photos/seed/lemon/600/400",
+    "images": [
+      "https://picsum.photos/seed/lemon/600/400",
+      "https://picsum.photos/seed/lemon-b/600/400"
+    ],
+    "badges": [
+      "vitaminC"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.4,
+    "description": "Lemons (500g) by FreshFarm. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 84,
+      "fiber": 3.4,
+      "vitaminC": 28
+    },
+    "allergens": [],
+    "related": [
+      "p_watermelon",
+      "p_kiwi",
+      "p_pear_green"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_watermelon",
+    "title": "Watermelon Half",
+    "brand": "SunnyOrchard",
+    "price": 3.99,
+    "originalPrice": 4.49,
+    "stock": 8,
+    "image": "https://picsum.photos/seed/watermelon/600/400",
+    "images": [
+      "https://picsum.photos/seed/watermelon/600/400",
+      "https://picsum.photos/seed/watermelon-b/600/400"
+    ],
+    "badges": [
+      "deal",
+      "limited"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.2,
+    "description": "Watermelon Half by SunnyOrchard. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 62,
+      "fiber": 2.2,
+      "vitaminC": 6
+    },
+    "allergens": [],
+    "related": [
+      "p_kiwi",
+      "p_pear_green",
+      "p_peach"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_kiwi",
+    "title": "Kiwi (4pcs)",
+    "brand": "GreenLeaf",
+    "price": 2.29,
+    "originalPrice": 2.29,
+    "stock": 0,
+    "image": "https://picsum.photos/seed/kiwi/600/400",
+    "images": [
+      "https://picsum.photos/seed/kiwi/600/400",
+      "https://picsum.photos/seed/kiwi-b/600/400"
+    ],
+    "badges": [
+      "vitaminC",
+      "oos"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.4,
+    "description": "Kiwi (4pcs) by GreenLeaf. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 84,
+      "fiber": 3.4,
+      "vitaminC": 28
+    },
+    "allergens": [],
+    "related": [
+      "p_pear_green",
+      "p_peach",
+      "p_apple_gala"
+    ],
+    "backorderable": true
+  },
+  {
+    "id": "p_pear_green",
+    "title": "Green Pear (1kg)",
+    "brand": "FreshFarm",
+    "price": 2.69,
+    "originalPrice": 2.99,
+    "stock": 26,
+    "image": "https://picsum.photos/seed/pear_green/600/400",
+    "images": [
+      "https://picsum.photos/seed/pear_green/600/400",
+      "https://picsum.photos/seed/pear_green-b/600/400",
+      "https://picsum.photos/seed/pear_green-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.0,
+    "description": "Green Pear (1kg) by FreshFarm. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 60,
+      "fiber": 3.0,
+      "vitaminC": 4
+    },
+    "allergens": [],
+    "related": [
+      "p_peach",
+      "p_apple_gala",
+      "p_banana_chiquita"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_peach",
+    "title": "Peaches (500g)",
+    "brand": "SunnyOrchard",
+    "price": 2.79,
+    "originalPrice": 3.19,
+    "stock": 17,
+    "image": "https://picsum.photos/seed/peach/600/400",
+    "images": [
+      "https://picsum.photos/seed/peach/600/400",
+      "https://picsum.photos/seed/peach-b/600/400",
+      "https://picsum.photos/seed/peach-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "fresh"
+    ],
+    "categoryId": "c_fruit",
+    "rating": 4.1,
+    "description": "Peaches (500g) by SunnyOrchard. Hand-picked and delivered fresh. Rich in vitamins and perfect for snacking.",
+    "nutrition": {
+      "calories": 82,
+      "fiber": 3.2,
+      "vitaminC": 26
+    },
+    "allergens": [],
+    "related": [
+      "p_apple_gala",
+      "p_banana_chiquita",
+      "p_orange_navel"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_milk_2pct",
+    "title": "Milk 2% 1L",
+    "brand": "DairyPure",
+    "price": 1.29,
+    "originalPrice": 1.49,
+    "stock": 6,
+    "image": "https://picsum.photos/seed/milk1/600/400",
+    "images": [
+      "https://picsum.photos/seed/milk1/600/400",
+      "https://picsum.photos/seed/milk2/600/400"
+    ],
+    "badges": [
+      "deal",
+      "limited"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 4.3,
+    "description": "Pasteurized cow milk.",
+    "nutrition": {
+      "calories": 120,
+      "protein": 8,
+      "fat": 5,
+      "carbs": 11
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_milk_skim",
+      "p_cereal_oats",
+      "p_bread_sourdough"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_milk_skim",
+    "title": "Skim Milk 1L",
+    "brand": "DairyPure",
+    "price": 1.25,
+    "originalPrice": 1.25,
+    "stock": 30,
+    "image": "https://picsum.photos/seed/milk_skim/600/400",
+    "images": [
+      "https://picsum.photos/seed/milk_skim/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_dairy",
+    "rating": 4.5,
+    "description": "Skim Milk 1L by DairyPure. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 105,
+      "protein": 12,
+      "fat": 4,
+      "carbs": 5
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_cheddar_block",
+      "p_yogurt_plain",
+      "p_butter_salted"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_cheddar_block",
+    "title": "Cheddar Cheese (200g)",
+    "brand": "FarmGold",
+    "price": 2.39,
+    "originalPrice": 2.39,
+    "stock": 24,
+    "image": "https://picsum.photos/seed/cheddar/600/400",
+    "images": [
+      "https://picsum.photos/seed/cheddar/600/400",
+      "https://picsum.photos/seed/cheddar-b/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_dairy",
+    "rating": 4.0,
+    "description": "Cheddar Cheese (200g) by FarmGold. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 102,
+      "protein": 9,
+      "fat": 1,
+      "carbs": 2
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_yogurt_plain",
+      "p_butter_salted",
+      "p_yogurt_greek"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_yogurt_plain",
+    "title": "Yogurt Plain (500g)",
+    "brand": "MilkWay",
+    "price": 1.09,
+    "originalPrice": 1.29,
+    "stock": 44,
+    "image": "https://picsum.photos/seed/yogurt/600/400",
+    "images": [
+      "https://picsum.photos/seed/yogurt/600/400",
+      "https://picsum.photos/seed/yogurt-b/600/400"
+    ],
+    "badges": [
+      "deal",
+      "protein"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 4.4,
+    "description": "Yogurt Plain (500g) by MilkWay. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 146,
+      "protein": 13,
+      "fat": 5,
+      "carbs": 6
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_butter_salted",
+      "p_yogurt_greek",
+      "p_mozzarella"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_butter_salted",
+    "title": "Salted Butter (200g)",
+    "brand": "FarmGold",
+    "price": 2.59,
+    "originalPrice": 2.79,
+    "stock": 20,
+    "image": "https://picsum.photos/seed/butter_salted/600/400",
+    "images": [
+      "https://picsum.photos/seed/butter_salted/600/400",
+      "https://picsum.photos/seed/butter_salted-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 4.5,
+    "description": "Salted Butter (200g) by FarmGold. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 190,
+      "protein": 7,
+      "fat": 9,
+      "carbs": 12
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_yogurt_greek",
+      "p_mozzarella",
+      "p_cream_cooking"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_yogurt_greek",
+    "title": "Greek Yogurt (400g)",
+    "brand": "MilkWay",
+    "price": 1.79,
+    "originalPrice": 1.99,
+    "stock": 33,
+    "image": "https://picsum.photos/seed/yogurt_greek/600/400",
+    "images": [
+      "https://picsum.photos/seed/yogurt_greek/600/400"
+    ],
+    "badges": [
+      "deal",
+      "protein"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 4.0,
+    "description": "Greek Yogurt (400g) by MilkWay. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 102,
+      "protein": 9,
+      "fat": 1,
+      "carbs": 2
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_mozzarella",
+      "p_cream_cooking",
+      "p_eggs_12"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_mozzarella",
+    "title": "Mozzarella (250g)",
+    "brand": "FarmGold",
+    "price": 2.99,
+    "originalPrice": 3.29,
+    "stock": 15,
+    "image": "https://picsum.photos/seed/mozzarella/600/400",
+    "images": [
+      "https://picsum.photos/seed/mozzarella/600/400",
+      "https://picsum.photos/seed/mozzarella-b/600/400",
+      "https://picsum.photos/seed/mozzarella-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 4.2,
+    "description": "Mozzarella (250g) by FarmGold. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 195,
+      "protein": 12,
+      "fat": 14,
+      "carbs": 2
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_cream_cooking",
+      "p_eggs_12",
+      "p_milk_choc"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_cream_cooking",
+    "title": "Cooking Cream (250ml)",
+    "brand": "DairyPure",
+    "price": 1.49,
+    "originalPrice": 1.49,
+    "stock": 0,
+    "image": "https://picsum.photos/seed/cream_cooking/600/400",
+    "images": [
+      "https://picsum.photos/seed/cream_cooking/600/400",
+      "https://picsum.photos/seed/cream_cooking-b/600/400"
+    ],
+    "badges": [
+      "oos"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 4.7,
+    "description": "Cooking Cream (250ml) by DairyPure. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 173,
+      "protein": 13,
+      "fat": 12,
+      "carbs": 13
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_eggs_12",
+      "p_milk_choc",
+      "p_cottage"
+    ],
+    "backorderable": true
+  },
+  {
+    "id": "p_eggs_12",
+    "title": "Eggs (12pcs)",
+    "brand": "FarmGold",
+    "price": 2.99,
+    "originalPrice": 3.29,
+    "stock": 48,
+    "image": "https://picsum.photos/seed/eggs_12/600/400",
+    "images": [
+      "https://picsum.photos/seed/eggs_12/600/400",
+      "https://picsum.photos/seed/eggs_12-b/600/400",
+      "https://picsum.photos/seed/eggs_12-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "fresh",
+      "protein"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 4.4,
+    "description": "Eggs (12pcs) by FarmGold. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 146,
+      "protein": 13,
+      "fat": 5,
+      "carbs": 6
+    },
+    "allergens": [
+      "egg"
+    ],
+    "related": [
+      "p_milk_choc",
+      "p_cottage",
+      "p_labneh"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_milk_choc",
+    "title": "Chocolate Milk 500ml",
+    "brand": "MilkWay",
+    "price": 1.19,
+    "originalPrice": 1.19,
+    "stock": 7,
+    "image": "https://picsum.photos/seed/milk_choc/600/400",
+    "images": [
+      "https://picsum.photos/seed/milk_choc/600/400",
+      "https://picsum.photos/seed/milk_choc-b/600/400"
+    ],
+    "badges": [
+      "limited"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 4.1,
+    "description": "Chocolate Milk 500ml by MilkWay. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 100,
+      "protein": 7,
+      "fat": 13,
+      "carbs": 13
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_cottage",
+      "p_labneh",
+      "p_milk_2pct"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_cottage",
+    "title": "Cottage Cheese (250g)",
+    "brand": "DairyPure",
+    "price": 1.69,
+    "originalPrice": 1.89,
+    "stock": 22,
+    "image": "https://picsum.photos/seed/cottage/600/400",
+    "images": [
+      "https://picsum.photos/seed/cottage/600/400",
+      "https://picsum.photos/seed/cottage-b/600/400",
+      "https://picsum.photos/seed/cottage-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "protein"
+    ],
+    "categoryId": "c_dairy",
+    "rating": 3.9,
+    "description": "Cottage Cheese (250g) by DairyPure. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 99,
+      "protein": 12,
+      "fat": 12,
+      "carbs": 12
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_labneh",
+      "p_milk_2pct",
+      "p_milk_skim"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_labneh",
+    "title": "Labneh (300g)",
+    "brand": "MilkWay",
+    "price": 1.59,
+    "originalPrice": 1.59,
+    "stock": 28,
+    "image": "https://picsum.photos/seed/labneh/600/400",
+    "images": [
+      "https://picsum.photos/seed/labneh/600/400",
+      "https://picsum.photos/seed/labneh-b/600/400",
+      "https://picsum.photos/seed/labneh-c/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_dairy",
+    "rating": 4.4,
+    "description": "Labneh (300g) by MilkWay. Quality dairy kept chilled from farm to your fridge.",
+    "nutrition": {
+      "calories": 146,
+      "protein": 13,
+      "fat": 5,
+      "carbs": 6
+    },
+    "allergens": [
+      "milk"
+    ],
+    "related": [
+      "p_milk_2pct",
+      "p_milk_skim",
+      "p_cheddar_block"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_bread_sourdough",
+    "title": "Sourdough Bread",
+    "brand": "BakeHouse",
+    "price": 2.79,
+    "originalPrice": 2.99,
+    "stock": 12,
+    "image": "https://picsum.photos/seed/sourdough/600/400",
+    "images": [
+      "https://picsum.photos/seed/sourdough/600/400"
+    ],
+    "badges": [
+      "deal",
+      "fresh"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.6,
+    "description": "Artisan sourdough with natural starter.",
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "fat": 1,
+      "carbs": 36
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_cheddar_block",
+      "p_butter_salted",
+      "p_croissant_butter"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_croissant_butter",
+    "title": "Butter Croissant (2pcs)",
+    "brand": "Crust&Co",
+    "price": 1.49,
+    "originalPrice": 1.69,
+    "stock": 35,
+    "image": "https://picsum.photos/seed/croissant/600/400",
+    "images": [
+      "https://picsum.photos/seed/croissant/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.5,
+    "description": "Butter Croissant (2pcs) by Crust&Co. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 284,
+      "protein": 7,
+      "fat": 10,
+      "carbs": 34
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_baguette",
+      "p_bagel_sesame",
+      "p_muffin_blueberry"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_baguette",
+    "title": "French Baguette",
+    "brand": "MorningOven",
+    "price": 1.19,
+    "originalPrice": 1.19,
+    "stock": 40,
+    "image": "https://picsum.photos/seed/baguette/600/400",
+    "images": [
+      "https://picsum.photos/seed/baguette/600/400",
+      "https://picsum.photos/seed/baguette-b/600/400"
+    ],
+    "badges": [
+      "fresh"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.3,
+    "description": "French Baguette by MorningOven. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 253,
+      "protein": 8,
+      "fat": 4,
+      "carbs": 28
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_bagel_sesame",
+      "p_muffin_blueberry",
+      "p_toast_white"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_bagel_sesame",
+    "title": "Sesame Bagels (4pcs)",
+    "brand": "BakeHouse",
+    "price": 2.29,
+    "originalPrice": 2.49,
+    "stock": 18,
+    "image": "https://picsum.photos/seed/bagel_sesame/600/400",
+    "images": [
+      "https://picsum.photos/seed/bagel_sesame/600/400",
+      "https://picsum.photos/seed/bagel_sesame-b/600/400",
+      "https://picsum.photos/seed/bagel_sesame-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.0,
+    "description": "Sesame Bagels (4pcs) by BakeHouse. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 262,
+      "protein": 9,
+      "fat": 1,
+      "carbs": 37
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_muffin_blueberry",
+      "p_toast_white",
+      "p_pita"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_muffin_blueberry",
+    "title": "Blueberry Muffins (4pcs)",
+    "brand": "Crust&Co",
+    "price": 2.99,
+    "originalPrice": 3.49,
+    "stock": 9,
+    "image": "https://picsum.photos/seed/muffin_blueberry/600/400",
+    "images": [
+      "https://picsum.photos/seed/muffin_blueberry/600/400",
+      "https://picsum.photos/seed/muffin_blueberry-b/600/400"
+    ],
+    "badges": [
+      "deal",
+      "limited"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.2,
+    "description": "Blueberry Muffins (4pcs) by Crust&Co. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 292,
+      "protein": 7,
+      "fat": 3,
+      "carbs": 42
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_toast_white",
+      "p_pita",
+      "p_donut"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_toast_white",
+    "title": "White Toast Bread",
+    "brand": "MorningOven",
+    "price": 1.39,
+    "originalPrice": 1.39,
+    "stock": 60,
+    "image": "https://picsum.photos/seed/toast_white/600/400",
+    "images": [
+      "https://picsum.photos/seed/toast_white/600/400",
+      "https://picsum.photos/seed/toast_white-b/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_bakery",
+    "rating": 4.2,
+    "description": "White Toast Bread by MorningOven. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 292,
+      "protein": 7,
+      "fat": 3,
+      "carbs": 42
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_pita",
+      "p_donut",
+      "p_ciabatta"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_pita",
+    "title": "Pita Bread (6pcs)",
+    "brand": "BakeHouse",
+    "price": 0.99,
+    "originalPrice": 1.19,
+    "stock": 70,
+    "image": "https://picsum.photos/seed/pita/600/400",
+    "images": [
+      "https://picsum.photos/seed/pita/600/400",
+      "https://picsum.photos/seed/pita-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.5,
+    "description": "Pita Bread (6pcs) by BakeHouse. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 195,
+      "protein": 6,
+      "fat": 11,
+      "carbs": 45
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_donut",
+      "p_ciabatta",
+      "p_rye"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_donut",
+    "title": "Glazed Donuts (6pcs)",
+    "brand": "Crust&Co",
+    "price": 3.19,
+    "originalPrice": 3.19,
+    "stock": 0,
+    "image": "https://picsum.photos/seed/donut/600/400",
+    "images": [
+      "https://picsum.photos/seed/donut/600/400",
+      "https://picsum.photos/seed/donut-b/600/400",
+      "https://picsum.photos/seed/donut-c/600/400"
+    ],
+    "badges": [
+      "oos"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.3,
+    "description": "Glazed Donuts (6pcs) by Crust&Co. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 173,
+      "protein": 8,
+      "fat": 12,
+      "carbs": 48
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_ciabatta",
+      "p_rye",
+      "p_cinnamon_roll"
+    ],
+    "backorderable": true
+  },
+  {
+    "id": "p_ciabatta",
+    "title": "Ciabatta Roll (2pcs)",
+    "brand": "MorningOven",
+    "price": 1.59,
+    "originalPrice": 1.79,
+    "stock": 16,
+    "image": "https://picsum.photos/seed/ciabatta/600/400",
+    "images": [
+      "https://picsum.photos/seed/ciabatta/600/400"
+    ],
+    "badges": [
+      "deal",
+      "fresh"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.7,
+    "description": "Ciabatta Roll (2pcs) by MorningOven. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 217,
+      "protein": 5,
+      "fat": 4,
+      "carbs": 42
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_rye",
+      "p_cinnamon_roll",
+      "p_bread_sourdough"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_rye",
+    "title": "Rye Bread",
+    "brand": "BakeHouse",
+    "price": 2.49,
+    "originalPrice": 2.49,
+    "stock": 13,
+    "image": "https://picsum.photos/seed/rye/600/400",
+    "images": [
+      "https://picsum.photos/seed/rye/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_bakery",
+    "rating": 4.4,
+    "description": "Rye Bread by BakeHouse. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 296,
+      "protein": 6,
+      "fat": 10,
+      "carbs": 46
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_cinnamon_roll",
+      "p_bread_sourdough",
+      "p_croissant_butter"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_cinnamon_roll",
+    "title": "Cinnamon Rolls (3pcs)",
+    "brand": "Crust&Co",
+    "price": 2.69,
+    "originalPrice": 2.99,
+    "stock": 8,
+    "image": "https://picsum.photos/seed/cinnamon_roll/600/400",
+    "images": [
+      "https://picsum.photos/seed/cinnamon_roll/600/400",
+      "https://picsum.photos/seed/cinnamon_roll-b/600/400",
+      "https://picsum.photos/seed/cinnamon_roll-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "limited"
+    ],
+    "categoryId": "c_bakery",
+    "rating": 4.2,
+    "description": "Cinnamon Rolls (3pcs) by Crust&Co. Baked fresh every morning with simple, honest ingredients.",
+    "nutrition": {
+      "calories": 292,
+      "protein": 7,
+      "fat": 3,
+      "carbs": 42
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_bread_sourdough",
+      "p_croissant_butter",
+      "p_baguette"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_orange_juice",
+    "title": "Orange Juice 1L",
+    "brand": "CitrusCo",
+    "price": 2.49,
+    "originalPrice": 2.89,
+    "stock": 25,
+    "image": "https://picsum.photos/seed/orange_juice/600/400",
+    "images": [
+      "https://picsum.photos/seed/orange_juice/600/400",
+      "https://picsum.photos/seed/orange_juice-b/600/400",
+      "https://picsum.photos/seed/orange_juice-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "vitaminC"
+    ],
+    "categoryId": "c_beverages",
+    "rating": 4.2,
+    "description": "Orange Juice 1L by CitrusCo. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 122,
+      "sugar": 5
+    },
+    "allergens": [],
+    "related": [
+      "p_apple_juice",
+      "p_water_6",
+      "p_sparkling"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_apple_juice",
+    "title": "Apple Juice 1L",
+    "brand": "CitrusCo",
+    "price": 2.29,
+    "originalPrice": 2.29,
+    "stock": 31,
+    "image": "https://picsum.photos/seed/apple_juice/600/400",
+    "images": [
+      "https://picsum.photos/seed/apple_juice/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_beverages",
+    "rating": 4.0,
+    "description": "Apple Juice 1L by CitrusCo. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 47,
+      "sugar": 14
+    },
+    "allergens": [],
+    "related": [
+      "p_water_6",
+      "p_sparkling",
+      "p_cola_330"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_water_6",
+    "title": "Spring Water 6x1.5L",
+    "brand": "Aqua Pura",
+    "price": 2.99,
+    "originalPrice": 3.29,
+    "stock": 50,
+    "image": "https://picsum.photos/seed/water_6/600/400",
+    "images": [
+      "https://picsum.photos/seed/water_6/600/400",
+      "https://picsum.photos/seed/water_6-b/600/400",
+      "https://picsum.photos/seed/water_6-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_beverages",
+    "rating": 4.5,
+    "description": "Spring Water 6x1.5L by Aqua Pura. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 55,
+      "sugar": 22
+    },
+    "allergens": [],
+    "related": [
+      "p_sparkling",
+      "p_cola_330",
+      "p_green_tea"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_sparkling",
+    "title": "Sparkling Water 1L",
+    "brand": "Aqua Pura",
+    "price": 0.89,
+    "originalPrice": 0.89,
+    "stock": 64,
+    "image": "https://picsum.photos/seed/sparkling/600/400",
+    "images": [
+      "https://picsum.photos/seed/sparkling/600/400",
+      "https://picsum.photos/seed/sparkling-b/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_beverages",
+    "rating": 4.1,
+    "description": "Sparkling Water 1L by Aqua Pura. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 107,
+      "sugar": 18
+    },
+    "allergens": [],
+    "related": [
+      "p_cola_330",
+      "p_green_tea",
+      "p_energy"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_cola_330",
+    "title": "Cola Can 330ml",
+    "brand": "FreshSip",
+    "price": 0.69,
+    "originalPrice": 0.79,
+    "stock": 120,
+    "image": "https://picsum.photos/seed/cola_330/600/400",
+    "images": [
+      "https://picsum.photos/seed/cola_330/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_beverages",
+    "rating": 4.7,
+    "description": "Cola Can 330ml by FreshSip. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 77,
+      "sugar": 16
+    },
+    "allergens": [],
+    "related": [
+      "p_green_tea",
+      "p_energy",
+      "p_lemonade"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_green_tea",
+    "title": "Iced Green Tea 500ml",
+    "brand": "FreshSip",
+    "price": 1.29,
+    "originalPrice": 1.49,
+    "stock": 36,
+    "image": "https://picsum.photos/seed/green_tea/600/400",
+    "images": [
+      "https://picsum.photos/seed/green_tea/600/400",
+      "https://picsum.photos/seed/green_tea-b/600/400",
+      "https://picsum.photos/seed/green_tea-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_beverages",
+    "rating": 4.4,
+    "description": "Iced Green Tea 500ml by FreshSip. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 102,
+      "sugar": 13
+    },
+    "allergens": [],
+    "related": [
+      "p_energy",
+      "p_lemonade",
+      "p_coffee_cold"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_energy",
+    "title": "Energy Drink 250ml",
+    "brand": "FreshSip",
+    "price": 1.49,
+    "originalPrice": 1.49,
+    "stock": 0,
+    "image": "https://picsum.photos/seed/energy/600/400",
+    "images": [
+      "https://picsum.photos/seed/energy/600/400",
+      "https://picsum.photos/seed/energy-b/600/400",
+      "https://picsum.photos/seed/energy-c/600/400"
+    ],
+    "badges": [
+      "oos"
+    ],
+    "categoryId": "c_beverages",
+    "rating": 4.3,
+    "description": "Energy Drink 250ml by FreshSip. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 52,
+      "sugar": 19
+    },
+    "allergens": [],
+    "related": [
+      "p_lemonade",
+      "p_coffee_cold",
+      "p_coconut_water"
+    ],
+    "backorderable": true
+  },
+  {
+    "id": "p_lemonade",
+    "title": "Lemonade 1L",
+    "brand": "CitrusCo",
+    "price": 1.79,
+    "originalPrice": 1.99,
+    "stock": 19,
+    "image": "https://picsum.photos/seed/lemonade/600/400",
+    "images": [
+      "https://picsum.photos/seed/lemonade/600/400",
+      "https://picsum.photos/seed/lemonade-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_beverages",
+    "rating": 4.5,
+    "description": "Lemonade 1L by CitrusCo. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 92,
+      "sugar": 3
+    },
+    "allergens": [],
+    "related": [
+      "p_coffee_cold",
+      "p_coconut_water",
+      "p_mango_juice"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_coffee_cold",
+    "title": "Cold Brew Coffee 250ml",
+    "brand": "FreshSip",
+    "price": 2.19,
+    "originalPrice": 2.49,
+    "stock": 12,
+    "image": "https://picsum.photos/seed/coffee_cold/600/400",
+    "images": [
+      "https://picsum.photos/seed/coffee_cold/600/400",
+      "https://picsum.photos/seed/coffee_cold-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_beverages",
+    "rating": 4.1,
+    "description": "Cold Brew Coffee 250ml by FreshSip. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 27,
+      "sugar": 14
+    },
+    "allergens": [],
+    "related": [
+      "p_coconut_water",
+      "p_mango_juice",
+      "p_orange_juice"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_coconut_water",
+    "title": "Coconut Water 330ml",
+    "brand": "Aqua Pura",
+    "price": 1.59,
+    "originalPrice": 1.59,
+    "stock": 27,
+    "image": "https://picsum.photos/seed/coconut_water/600/400",
+    "images": [
+      "https://picsum.photos/seed/coconut_water/600/400",
+      "https://picsum.photos/seed/coconut_water-b/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_beverages",
+    "rating": 4.0,
+    "description": "Coconut Water 330ml by Aqua Pura. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 112,
+      "sugar": 23
+    },
+    "allergens": [],
+    "related": [
+      "p_mango_juice",
+      "p_orange_juice",
+      "p_apple_juice"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_mango_juice",
+    "title": "Mango Juice 1L",
+    "brand": "CitrusCo",
+    "price": 2.39,
+    "originalPrice": 2.69,
+    "stock": 9,
+    "image": "https://picsum.photos/seed/mango_juice/600/400",
+    "images": [
+      "https://picsum.photos/seed/mango_juice/600/400"
+    ],
+    "badges": [
+      "deal",
+      "limited"
+    ],
+    "categoryId": "c_beverages",
+    "rating": 4.6,
+    "description": "Mango Juice 1L by CitrusCo. Refreshing drink, best served chilled.",
+    "nutrition": {
+      "calories": 102,
+      "sugar": 13
+    },
+    "allergens": [],
+    "related": [
+      "p_orange_juice",
+      "p_apple_juice",
+      "p_water_6"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_rice_basmati",
+    "title": "Basmati Rice (1kg)",
+    "brand": "GoldenGrain",
+    "price": 3.49,
+    "originalPrice": 3.99,
+    "stock": 45,
+    "image": "https://picsum.photos/seed/rice_basmati/600/400",
+    "images": [
+      "https://picsum.photos/seed/rice_basmati/600/400",
+      "https://picsum.photos/seed/rice_basmati-b/600/400",
+      "https://picsum.photos/seed/rice_basmati-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.3,
+    "description": "Basmati Rice (1kg) by GoldenGrain. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 282,
+      "protein": 2,
+      "carbs": 12
+    },
+    "allergens": [],
+    "related": [
+      "p_pasta_penne",
+      "p_cereal_oats",
+      "p_olive_oil"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_pasta_penne",
+    "title": "Penne Pasta (500g)",
+    "brand": "PantryPro",
+    "price": 1.29,
+    "originalPrice": 1.49,
+    "stock": 80,
+    "image": "https://picsum.photos/seed/pasta_penne/600/400",
+    "images": [
+      "https://picsum.photos/seed/pasta_penne/600/400",
+      "https://picsum.photos/seed/pasta_penne-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 3.9,
+    "description": "Penne Pasta (500g) by PantryPro. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 359,
+      "protein": 3,
+      "carbs": 69
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_cereal_oats",
+      "p_olive_oil",
+      "p_sugar"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_cereal_oats",
+    "title": "Rolled Oats (750g)",
+    "brand": "NutriMill",
+    "price": 2.79,
+    "originalPrice": 2.99,
+    "stock": 33,
+    "image": "https://picsum.photos/seed/cereal_oats/600/400",
+    "images": [
+      "https://picsum.photos/seed/cereal_oats/600/400",
+      "https://picsum.photos/seed/cereal_oats-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.6,
+    "description": "Rolled Oats (750g) by NutriMill. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 374,
+      "protein": 2,
+      "carbs": 24
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_olive_oil",
+      "p_sugar",
+      "p_flour"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_olive_oil",
+    "title": "Olive Oil (500ml)",
+    "brand": "PantryPro",
+    "price": 6.99,
+    "originalPrice": 7.99,
+    "stock": 14,
+    "image": "https://picsum.photos/seed/olive_oil/600/400",
+    "images": [
+      "https://picsum.photos/seed/olive_oil/600/400",
+      "https://picsum.photos/seed/olive_oil-b/600/400",
+      "https://picsum.photos/seed/olive_oil-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.7,
+    "description": "Olive Oil (500ml) by PantryPro. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 267,
+      "protein": 4,
+      "carbs": 57
+    },
+    "allergens": [],
+    "related": [
+      "p_sugar",
+      "p_flour",
+      "p_lentils"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_sugar",
+    "title": "White Sugar (1kg)",
+    "brand": "GoldenGrain",
+    "price": 1.49,
+    "originalPrice": 1.49,
+    "stock": 90,
+    "image": "https://picsum.photos/seed/sugar/600/400",
+    "images": [
+      "https://picsum.photos/seed/sugar/600/400",
+      "https://picsum.photos/seed/sugar-b/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_pantry",
+    "rating": 4.4,
+    "description": "White Sugar (1kg) by GoldenGrain. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 236,
+      "protein": 7,
+      "carbs": 46
+    },
+    "allergens": [],
+    "related": [
+      "p_flour",
+      "p_lentils",
+      "p_tomato_sauce"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_flour",
+    "title": "All-Purpose Flour (1kg)",
+    "brand": "NutriMill",
+    "price": 1.19,
+    "originalPrice": 1.19,
+    "stock": 70,
+    "image": "https://picsum.photos/seed/flour/600/400",
+    "images": [
+      "https://picsum.photos/seed/flour/600/400",
+      "https://picsum.photos/seed/flour-b/600/400",
+      "https://picsum.photos/seed/flour-c/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_pantry",
+    "rating": 4.3,
+    "description": "All-Purpose Flour (1kg) by NutriMill. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 144,
+      "protein": 7,
+      "carbs": 64
+    },
+    "allergens": [
+      "gluten"
+    ],
+    "related": [
+      "p_lentils",
+      "p_tomato_sauce",
+      "p_peanut_butter"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_lentils",
+    "title": "Red Lentils (500g)",
+    "brand": "GoldenGrain",
+    "price": 1.79,
+    "originalPrice": 1.99,
+    "stock": 38,
+    "image": "https://picsum.photos/seed/lentils/600/400",
+    "images": [
+      "https://picsum.photos/seed/lentils/600/400"
+    ],
+    "badges": [
+      "deal",
+      "protein"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.5,
+    "description": "Red Lentils (500g) by GoldenGrain. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 100,
+      "protein": 11,
+      "carbs": 20
+    },
+    "allergens": [],
+    "related": [
+      "p_tomato_sauce",
+      "p_peanut_butter",
+      "p_honey"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_tomato_sauce",
+    "title": "Tomato Sauce (400g)",
+    "brand": "PantryPro",
+    "price": 0.99,
+    "originalPrice": 1.19,
+    "stock": 66,
+    "image": "https://picsum.photos/seed/tomato_sauce/600/400",
+    "images": [
+      "https://picsum.photos/seed/tomato_sauce/600/400",
+      "https://picsum.photos/seed/tomato_sauce-b/600/400",
+      "https://picsum.photos/seed/tomato_sauce-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.0,
+    "description": "Tomato Sauce (400g) by PantryPro. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 102,
+      "protein": 13,
+      "carbs": 32
+    },
+    "allergens": [],
+    "related": [
+      "p_peanut_butter",
+      "p_honey",
+      "p_salt"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_peanut_butter",
+    "title": "Peanut Butter (340g)",
+    "brand": "NutriMill",
+    "price": 2.89,
+    "originalPrice": 3.29,
+    "stock": 21,
+    "image": "https://picsum.photos/seed/peanut_butter/600/400",
+    "images": [
+      "https://picsum.photos/seed/peanut_butter/600/400",
+      "https://picsum.photos/seed/peanut_butter-b/600/400"
+    ],
+    "badges": [
+      "deal",
+      "protein"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.6,
+    "description": "Peanut Butter (340g) by NutriMill. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 374,
+      "protein": 2,
+      "carbs": 24
+    },
+    "allergens": [
+      "peanuts"
+    ],
+    "related": [
+      "p_honey",
+      "p_salt",
+      "p_chickpeas"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_honey",
+    "title": "Natural Honey (350g)",
+    "brand": "GoldenGrain",
+    "price": 4.99,
+    "originalPrice": 5.49,
+    "stock": 10,
+    "image": "https://picsum.photos/seed/honey/600/400",
+    "images": [
+      "https://picsum.photos/seed/honey/600/400"
+    ],
+    "badges": [
+      "deal",
+      "limited"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.2,
+    "description": "Natural Honey (350g) by GoldenGrain. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 287,
+      "protein": 7,
+      "carbs": 27
+    },
+    "allergens": [],
+    "related": [
+      "p_salt",
+      "p_chickpeas",
+      "p_rice_basmati"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_salt",
+    "title": "Sea Salt (500g)",
+    "brand": "PantryPro",
+    "price": 0.79,
+    "originalPrice": 0.79,
+    "stock": 0,
+    "image": "https://picsum.photos/seed/salt/600/400",
+    "images": [
+      "https://picsum.photos/seed/salt/600/400",
+      "https://picsum.photos/seed/salt-b/600/400"
+    ],
+    "badges": [
+      "oos"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.1,
+    "description": "Sea Salt (500g) by PantryPro. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 152,
+      "protein": 4,
+      "carbs": 32
+    },
+    "allergens": [],
+    "related": [
+      "p_chickpeas",
+      "p_rice_basmati",
+      "p_pasta_penne"
+    ],
+    "backorderable": true
+  },
+  {
+    "id": "p_chickpeas",
+    "title": "Canned Chickpeas (400g)",
+    "brand": "PantryPro",
+    "price": 0.89,
+    "originalPrice": 0.99,
+    "stock": 58,
+    "image": "https://picsum.photos/seed/chickpeas/600/400",
+    "images": [
+      "https://picsum.photos/seed/chickpeas/600/400",
+      "https://picsum.photos/seed/chickpeas-b/600/400",
+      "https://picsum.photos/seed/chickpeas-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "protein"
+    ],
+    "categoryId": "c_pantry",
+    "rating": 4.4,
+    "description": "Canned Chickpeas (400g) by PantryPro. A reliable pantry staple for everyday cooking.",
+    "nutrition": {
+      "calories": 286,
+      "protein": 6,
+      "carbs": 26
+    },
+    "allergens": [],
+    "related": [
+      "p_rice_basmati",
+      "p_pasta_penne",
+      "p_cereal_oats"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_dish_soap",
+    "title": "Dish Soap (500ml)",
+    "brand": "SparkleHome",
+    "price": 1.99,
+    "originalPrice": 2.29,
+    "stock": 40,
+    "image": "https://picsum.photos/seed/dish_soap/600/400",
+    "images": [
+      "https://picsum.photos/seed/dish_soap/600/400",
+      "https://picsum.photos/seed/dish_soap-b/600/400",
+      "https://picsum.photos/seed/dish_soap-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_household",
+    "rating": 4.2,
+    "description": "Dish Soap (500ml) by SparkleHome. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_laundry",
+      "p_paper_towels",
+      "p_trash_bags"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_laundry",
+    "title": "Laundry Detergent (2L)",
+    "brand": "CleanWave",
+    "price": 6.49,
+    "originalPrice": 7.49,
+    "stock": 18,
+    "image": "https://picsum.photos/seed/laundry/600/400",
+    "images": [
+      "https://picsum.photos/seed/laundry/600/400",
+      "https://picsum.photos/seed/laundry-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_household",
+    "rating": 4.1,
+    "description": "Laundry Detergent (2L) by CleanWave. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_paper_towels",
+      "p_trash_bags",
+      "p_sponge"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_paper_towels",
+    "title": "Paper Towels (2 rolls)",
+    "brand": "EcoNest",
+    "price": 2.49,
+    "originalPrice": 2.49,
+    "stock": 52,
+    "image": "https://picsum.photos/seed/paper_towels/600/400",
+    "images": [
+      "https://picsum.photos/seed/paper_towels/600/400",
+      "https://picsum.photos/seed/paper_towels-b/600/400",
+      "https://picsum.photos/seed/paper_towels-c/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_household",
+    "rating": 4.3,
+    "description": "Paper Towels (2 rolls) by EcoNest. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_trash_bags",
+      "p_sponge",
+      "p_glass_cleaner"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_trash_bags",
+    "title": "Trash Bags (30pcs)",
+    "brand": "EcoNest",
+    "price": 2.19,
+    "originalPrice": 2.49,
+    "stock": 34,
+    "image": "https://picsum.photos/seed/trash_bags/600/400",
+    "images": [
+      "https://picsum.photos/seed/trash_bags/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_household",
+    "rating": 4.6,
+    "description": "Trash Bags (30pcs) by EcoNest. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_sponge",
+      "p_glass_cleaner",
+      "p_bleach"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_sponge",
+    "title": "Kitchen Sponges (5pcs)",
+    "brand": "SparkleHome",
+    "price": 1.29,
+    "originalPrice": 1.29,
+    "stock": 77,
+    "image": "https://picsum.photos/seed/sponge/600/400",
+    "images": [
+      "https://picsum.photos/seed/sponge/600/400",
+      "https://picsum.photos/seed/sponge-b/600/400",
+      "https://picsum.photos/seed/sponge-c/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_household",
+    "rating": 4.3,
+    "description": "Kitchen Sponges (5pcs) by SparkleHome. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_glass_cleaner",
+      "p_bleach",
+      "p_tissue"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_glass_cleaner",
+    "title": "Glass Cleaner (500ml)",
+    "brand": "CleanWave",
+    "price": 1.89,
+    "originalPrice": 2.19,
+    "stock": 23,
+    "image": "https://picsum.photos/seed/glass_cleaner/600/400",
+    "images": [
+      "https://picsum.photos/seed/glass_cleaner/600/400",
+      "https://picsum.photos/seed/glass_cleaner-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_household",
+    "rating": 4.5,
+    "description": "Glass Cleaner (500ml) by CleanWave. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_bleach",
+      "p_tissue",
+      "p_fabric_softener"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_bleach",
+    "title": "Bleach (1L)",
+    "brand": "CleanWave",
+    "price": 1.59,
+    "originalPrice": 1.59,
+    "stock": 0,
+    "image": "https://picsum.photos/seed/bleach/600/400",
+    "images": [
+      "https://picsum.photos/seed/bleach/600/400",
+      "https://picsum.photos/seed/bleach-b/600/400"
+    ],
+    "badges": [
+      "oos"
+    ],
+    "categoryId": "c_household",
+    "rating": 4.4,
+    "description": "Bleach (1L) by CleanWave. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_tissue",
+      "p_fabric_softener",
+      "p_air_freshener"
+    ],
+    "backorderable": true
+  },
+  {
+    "id": "p_tissue",
+    "title": "Facial Tissues (200pcs)",
+    "brand": "EcoNest",
+    "price": 1.39,
+    "originalPrice": 1.59,
+    "stock": 61,
+    "image": "https://picsum.photos/seed/tissue/600/400",
+    "images": [
+      "https://picsum.photos/seed/tissue/600/400",
+      "https://picsum.photos/seed/tissue-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_household",
+    "rating": 4.7,
+    "description": "Facial Tissues (200pcs) by EcoNest. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_fabric_softener",
+      "p_air_freshener",
+      "p_dish_soap"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_fabric_softener",
+    "title": "Fabric Softener (1L)",
+    "brand": "CleanWave",
+    "price": 3.29,
+    "originalPrice": 3.79,
+    "stock": 9,
+    "image": "https://picsum.photos/seed/fabric_softener/600/400",
+    "images": [
+      "https://picsum.photos/seed/fabric_softener/600/400",
+      "https://picsum.photos/seed/fabric_softener-b/600/400"
+    ],
+    "badges": [
+      "deal",
+      "limited"
+    ],
+    "categoryId": "c_household",
+    "rating": 4.0,
+    "description": "Fabric Softener (1L) by CleanWave. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_air_freshener",
+      "p_dish_soap",
+      "p_laundry"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_air_freshener",
+    "title": "Air Freshener (300ml)",
+    "brand": "SparkleHome",
+    "price": 2.59,
+    "originalPrice": 2.59,
+    "stock": 26,
+    "image": "https://picsum.photos/seed/air_freshener/600/400",
+    "images": [
+      "https://picsum.photos/seed/air_freshener/600/400",
+      "https://picsum.photos/seed/air_freshener-b/600/400",
+      "https://picsum.photos/seed/air_freshener-c/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_household",
+    "rating": 4.0,
+    "description": "Air Freshener (300ml) by SparkleHome. Keeps your home clean and fresh with less effort.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_dish_soap",
+      "p_laundry",
+      "p_paper_towels"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_shampoo",
+    "title": "Shampoo (400ml)",
+    "brand": "PureGlow",
+    "price": 3.99,
+    "originalPrice": 4.49,
+    "stock": 29,
+    "image": "https://picsum.photos/seed/shampoo/600/400",
+    "images": [
+      "https://picsum.photos/seed/shampoo/600/400",
+      "https://picsum.photos/seed/shampoo-b/600/400",
+      "https://picsum.photos/seed/shampoo-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_personal",
+    "rating": 4.1,
+    "description": "Shampoo (400ml) by PureGlow. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_conditioner",
+      "p_toothpaste",
+      "p_toothbrush"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_conditioner",
+    "title": "Conditioner (400ml)",
+    "brand": "PureGlow",
+    "price": 3.99,
+    "originalPrice": 4.49,
+    "stock": 24,
+    "image": "https://picsum.photos/seed/conditioner/600/400",
+    "images": [
+      "https://picsum.photos/seed/conditioner/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_personal",
+    "rating": 4.3,
+    "description": "Conditioner (400ml) by PureGlow. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_toothpaste",
+      "p_toothbrush",
+      "p_body_wash"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_toothpaste",
+    "title": "Toothpaste (100ml)",
+    "brand": "DailyCare",
+    "price": 1.99,
+    "originalPrice": 2.29,
+    "stock": 57,
+    "image": "https://picsum.photos/seed/toothpaste/600/400",
+    "images": [
+      "https://picsum.photos/seed/toothpaste/600/400",
+      "https://picsum.photos/seed/toothpaste-b/600/400",
+      "https://picsum.photos/seed/toothpaste-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_personal",
+    "rating": 3.9,
+    "description": "Toothpaste (100ml) by DailyCare. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_toothbrush",
+      "p_body_wash",
+      "p_hand_soap"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_toothbrush",
+    "title": "Toothbrush (2pcs)",
+    "brand": "DailyCare",
+    "price": 2.49,
+    "originalPrice": 2.49,
+    "stock": 41,
+    "image": "https://picsum.photos/seed/toothbrush/600/400",
+    "images": [
+      "https://picsum.photos/seed/toothbrush/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_personal",
+    "rating": 4.6,
+    "description": "Toothbrush (2pcs) by DailyCare. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_body_wash",
+      "p_hand_soap",
+      "p_deodorant"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_body_wash",
+    "title": "Body Wash (500ml)",
+    "brand": "SoftTouch",
+    "price": 3.29,
+    "originalPrice": 3.79,
+    "stock": 20,
+    "image": "https://picsum.photos/seed/body_wash/600/400",
+    "images": [
+      "https://picsum.photos/seed/body_wash/600/400",
+      "https://picsum.photos/seed/body_wash-b/600/400",
+      "https://picsum.photos/seed/body_wash-c/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_personal",
+    "rating": 4.0,
+    "description": "Body Wash (500ml) by SoftTouch. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_hand_soap",
+      "p_deodorant",
+      "p_lotion"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_hand_soap",
+    "title": "Hand Soap (250ml)",
+    "brand": "SoftTouch",
+    "price": 1.49,
+    "originalPrice": 1.49,
+    "stock": 66,
+    "image": "https://picsum.photos/seed/hand_soap/600/400",
+    "images": [
+      "https://picsum.photos/seed/hand_soap/600/400",
+      "https://picsum.photos/seed/hand_soap-b/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_personal",
+    "rating": 4.0,
+    "description": "Hand Soap (250ml) by SoftTouch. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_deodorant",
+      "p_lotion",
+      "p_razors"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_deodorant",
+    "title": "Deodorant (150ml)",
+    "brand": "PureGlow",
+    "price": 2.99,
+    "originalPrice": 3.49,
+    "stock": 0,
+    "image": "https://picsum.photos/seed/deodorant/600/400",
+    "images": [
+      "https://picsum.photos/seed/deodorant/600/400",
+      "https://picsum.photos/seed/deodorant-b/600/400",
+      "https://picsum.photos/seed/deodorant-c/600/400"
+    ],
+    "badges": [
+      "deal",
+      "oos"
+    ],
+    "categoryId": "c_personal",
+    "rating": 4.4,
+    "description": "Deodorant (150ml) by PureGlow. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_lotion",
+      "p_razors",
+      "p_sunscreen"
+    ],
+    "backorderable": true
+  },
+  {
+    "id": "p_lotion",
+    "title": "Body Lotion (400ml)",
+    "brand": "SoftTouch",
+    "price": 4.29,
+    "originalPrice": 4.79,
+    "stock": 13,
+    "image": "https://picsum.photos/seed/lotion/600/400",
+    "images": [
+      "https://picsum.photos/seed/lotion/600/400",
+      "https://picsum.photos/seed/lotion-b/600/400"
+    ],
+    "badges": [
+      "deal"
+    ],
+    "categoryId": "c_personal",
+    "rating": 4.7,
+    "description": "Body Lotion (400ml) by SoftTouch. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_razors",
+      "p_sunscreen",
+      "p_shampoo"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_razors",
+    "title": "Razors (4pcs)",
+    "brand": "DailyCare",
+    "price": 3.99,
+    "originalPrice": 3.99,
+    "stock": 17,
+    "image": "https://picsum.photos/seed/razors/600/400",
+    "images": [
+      "https://picsum.photos/seed/razors/600/400",
+      "https://picsum.photos/seed/razors-b/600/400",
+      "https://picsum.photos/seed/razors-c/600/400"
+    ],
+    "badges": [],
+    "categoryId": "c_personal",
+    "rating": 4.0,
+    "description": "Razors (4pcs) by DailyCare. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_sunscreen",
+      "p_shampoo",
+      "p_conditioner"
+    ],
+    "backorderable": false
+  },
+  {
+    "id": "p_sunscreen",
+    "title": "Sunscreen SPF50 (100ml)",
+    "brand": "PureGlow",
+    "price": 5.49,
+    "originalPrice": 5.99,
+    "stock": 8,
+    "image": "https://picsum.photos/seed/sunscreen/600/400",
+    "images": [
+      "https://picsum.photos/seed/sunscreen/600/400"
+    ],
+    "badges": [
+      "deal",
+      "limited"
+    ],
+    "categoryId": "c_personal",
+    "rating": 4.2,
+    "description": "Sunscreen SPF50 (100ml) by PureGlow. Gentle everyday care you can count on.",
+    "nutrition": {},
+    "allergens": [],
+    "related": [
+      "p_shampoo",
+      "p_conditioner",
+      "p_toothpaste"
+    ],
+    "backorderable": false
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "productId": "p_strawberry_box", "dealPrice": 2.49, "endsInHours": 6 },
+    { "productId": "p_cheddar_block", "dealPrice": 2.19, "endsInHours": 4 },
+    { "productId": "p_croissant_butter", "dealPrice": 1.29, "endsInHours": 5 },
+    { "productId": "p_yogurt_plain", "dealPrice": 0.99, "endsInHours": 8 },
+    { "productId": "p_orange_juice", "dealPrice": 1.99, "endsInHours": 7 }
+  ]
+}

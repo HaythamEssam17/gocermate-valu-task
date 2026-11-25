@@ -1,0 +1,105 @@
+{
+    "lblAppName": "Grocer Mate",
+    "lblLang": "عربي",
+    "lblLanguage": "Language",
+    "lblDefault": "Default",
+    "lblTheme": "Theme",
+    "lblRetry": "Retry",
+    "lblWrongHappen": "Something went wrong, please try again later",
+    "lblLoading": "Loading...",
+    "lblDarkMode": "Dark Mode",
+    "lblLightMode": "Light Mode",
+    "lblSearch": "Search",
+    "lblEGP": "EGP",
+    "lblHome": "Home",
+    "lblCart": "Cart",
+    "lblServices": "Services",
+    "lblOrders": "Orders",
+    "lblNotifications": "Notifications",
+    "youAreOffline": "You are offline - showing saved data. Cart and orders still work until network restored.",
+    "backOnline": "Back online - syncing your data",
+    "willBack": "We will be right back",
+    "appUnderMaintenance": "GrocerMate is under maintenance. Please try again in a few minutes.",
+    "checkAgain": "Check again",
+    "orderQueued": "Order queued. It will be sent when you are back online.",
+    "noItemsLeftToOrder": "No items left to order.",
+    "checkout": "Checkout",
+    "reviewQueuedOrder": "Review queued order",
+    "orderWillQueued": "You are offline. Your order will be queued and sent automatically when you reconnect.",
+    "reconnectToReviewOrder": "Reconnect to review this order.",
+    "orderFailed": "Order failed.",
+    "mockServerTools": "Mock server tools",
+    "simulateOffline": "Simulate offline",
+    "behavesExactlyLikeLosingConnection": "Behaves exactly like losing the connection",
+    "randomRequestFailures": "Random request failures",
+    "latency": "Latency",
+    "fast": "Fast",
+    "normal": "Normal",
+    "slow": "Slow",
+    "noDealsForNow": "No deals for now.",
+    "dealsOfTheDay": "Deals of the day",
+    "outOfStock": "Out of stock.",
+    "items": "Items",
+    "discount": "Discount",
+    "subtotal": "Subtotal",
+    "tax": "Tax",
+    "delivery": "Delivery",
+    "free": "Free",
+    "total": "total",
+    "addMoreForFreeDelivery": "Add {count} more for free delivery.",
+    "@addMoreForFreeDelivery": {
+        "placeholders": {
+            "count": {
+                "type": "double"
+            }
+        }
+    },
+    "onlyStockLeft": "Only {stock} left",
+    "@onlyStockLeft": {
+        "placeholders": {
+            "stock": {
+                "type": "int"
+            }
+        }
+    },
+    "qty": "Qty",
+    "moveToCart": "Move to cart",
+    "saveForLater": "Save for later",
+    "cartCount": "Cart {count}",
+    "@cartCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "selectedCount": "Selected {count}",
+    "@selectedCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "savedCount": "Saved {count}",
+    "@savedCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "myCart": "My cart",
+    "yourCartIsEmpty": "Your cart is empty",
+    "addSomeToGetStarted": "Add some fresh groceries to get started.",
+    "browseProducts": "Browse products",
+    "nothingSavedForLater": "Nothing saved for later",
+    "moveItemsToSavedLater": "Move items here from your cart to buy them another time.",
+    "failedToLoadProducts": "Failed to load products.",
+    "noProducts": "No products here yet",
+    "tryAnotherCategory": "Try another category.",
+    "couldNotRefresh": "Could not refresh - showing saved products.",
+    "youReachedTheEnd": "You've reached the end",
+    "failedToLoadCategories": "Failed to load categories - retry",
+    "all": "All"
+}
